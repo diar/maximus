@@ -1,0 +1,52 @@
+<div id="content">
+  <div class="right">
+    <div class="caption">Контакты:</div>
+    <span class="address2">г. Казань <br />ул. Минская, 9 ТК "Азино"</span>
+    <div class="contact">
+      <span class="tel"><span>(843)</span>537-15-15</span>
+      <br /><br />
+    </div>
+  </div>
+  <div id="page">
+    <h2 class="title">Условия участия:</h2>
+    <p>
+      Для участия в конкурсе необходимо отправить свою фотографию на
+      электронный адрес <a href="mailto:pr@fk-maximus.ru">pr@fk-maximus.ru</a>
+      в срок до 25 июня 2010 г., а так же активно голосовать за понравившиеся<br />
+      фотографии на сайте <a href="http://www.fk-maximus.ru">www.fk-maximus.ru</a></p>
+    <p>
+      Более подробно с правилами проведения конкурса можно
+      <a href="rules.html">ознакомиться здесь</a>
+    </p>
+  </div>
+  <div class="clear"></div>
+  <div id="vote_photos">
+    <div id="vote_header">Голосование за фотографии</div>
+    <div id="vote_content">
+      <div class="photos">
+        <% @photos.each do |photo| %>
+        <div class="photo">
+          <img src="/images/photos/<%= photo.src_min %>" />
+          <div class="vote_block">
+            <a href="#" class="do_vote">Проголосовать</a>
+            <span><%= photo.votes.count %></span>
+            <span class="vote_id" style="display: none;"><%= photo.id %></span>
+          </div>
+        </div>
+        <% end %>
+      </div>
+      <img class="arrow_left" src="images/photo-arrow-left.jpg" />
+      <img class="arrow_right" src="images/photo-arrow-right.jpg" />
+    </div>
+    <div id="vote_content_right"></div>
+  </div>
+</div>
+<div id="vote_dialog">
+  <span>Имя и фамилия</span>
+  <input id="vote_name" type="text" />
+  <span>E-mail</span>
+  <input id="vote_mail" type="text" />
+  <div id="vote_message"></div>
+  <input id="vote_id" type="hidden" />
+  <input type="button" id="vote_submit" value="Голосовать" />
+</div>
