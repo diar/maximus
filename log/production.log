@@ -3902,3 +3902,9 @@ Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:08:48) [GET]
 Rendering template within layouts/application
 Rendering special/index
 Completed in 23ms (View: 16, DB: 2) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:13:52) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 50ms (View: 6, DB: 42) | 200 OK [http://maximus/]
