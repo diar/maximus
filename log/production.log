@@ -3908,3 +3908,38 @@ Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:13:52) [GET]
 Rendering template within layouts/application
 Rendering special/index
 Completed in 50ms (View: 6, DB: 42) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:15:24) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 38ms (View: 21, DB: 15) | 200 OK [http://maximus/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-29 18:17:58) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)

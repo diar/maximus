@@ -63,11 +63,11 @@
 	<div id="page">
 	    <h2 class="title">Карта проезда:</h2>
 <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту  (начало) -->
-<script src="http://api-maps.yandex.ru/1.1/?key=ADV9I0wBAAAAkwceKQIAxwLGo44H5vr5Tacvh0GaMNc5nN4AAAAAAAAAAABPoEIhmvn9E8ydwgPapNDhlMAOiQ==&wizard=constructor" type="text/javascript"></script>
+<script src="http://api-maps.yandex.ru/1.1/?key=ANYAKkwBAAAAr9NUYwIATMtGC8OoKZGUcCZQgSMSEIL-hVcAAAAAAAAAAADgYwULe63Aa2JjWQboeb3NtthNfg==&wizard=constructor" type="text/javascript"></script>
 <script type="text/javascript">
     YMaps.jQuery(function () {
-        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-5419")[0]);
-        map.setCenter(new YMaps.GeoPoint(49.221654,55.771983), 17, YMaps.MapType.MAP);
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-192")[0]);
+        map.setCenter(new YMaps.GeoPoint(49.229928,55.77379), 17, YMaps.MapType.MAP);
         map.addControl(new YMaps.Zoom());
         map.addControl(new YMaps.ToolBar());
         map.addControl(new YMaps.TypeControl());
@@ -80,23 +80,23 @@
             }
         });
 
-       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(49.220699,55.77211), "constructor#pmlbmPlacemark", "Фитнес центр «Maximus»."));
-        
+       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(49.230465,55.773391), "constructor#pmlbmPlacemark", "г. Казань <br/>ул. Минская, 9 ТК \"Азино\"<br/>тел. (843)537-15-15<br/>"));
+
         function createObject (type, point, style, description) {
             var allowObjects = ["Placemark", "Polyline", "Polygon"],
                 index = YMaps.jQuery.inArray( type, allowObjects),
                 constructor = allowObjects[(index == -1) ? 0 : index];
                 description = description || "";
-            
+
             var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
             object.description = description;
-            
+
             return object;
         }
     });
 </script>
 
-<div id="YMapsID-5419" style="width:450px;height:350px"></div>
+<div id="YMapsID-192" style="width:450px;height:350px"></div>
 <div style="width:450px;text-align:right;font-family:Arial"><a href="http://api.yandex.ru/maps/tools/constructor/" style="color:#1A3DC1">Создано с помощью инструментов Яндекс.Карт</a></div>
 <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
 	</div>
