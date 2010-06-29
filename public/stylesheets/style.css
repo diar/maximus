@@ -368,6 +368,14 @@ table td {
     color:#fff;
     font-size:13px;
 }
+#vote_content .photo img{
+    width:167px;
+}
+#vote_content .photo_container {
+    width:167px;
+    height:167px;
+    overflow:hidden;
+}
 #vote_content .photo span{
     color:#fff;
     font-size:19px;

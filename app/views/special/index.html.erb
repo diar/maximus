@@ -26,7 +26,9 @@
       <div class="photos">
         <% @photos.each do |photo| %>
         <div class="photo">
-          <img src="/images/photos/<%= photo.src_min %>" />
+          <div class="photo_container">
+            <img src="/images/photos/<%= photo.src_min %>" />
+           </div>
           <div class="vote_block">
             <a href="#" class="do_vote">Проголосовать</a>
             <span><%= photo.votes.count %></span>

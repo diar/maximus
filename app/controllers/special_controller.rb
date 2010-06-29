@@ -13,8 +13,12 @@ class SpecialController < ApplicationController
       else
         params[:vote][:user_ip] = request.ip
         vote = Vote.new(params[:vote])
-        vote.save
-        format.js {render :text=>'Ваш голос учтен'}
+        if vote.valid?
+          vote.save
+          format.js {render :text=>'Ваш голос учтен'}
+        else
+          format.js {render :text=>'Заполните все поля'}
+        end
       end
     end
   end

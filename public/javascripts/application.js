@@ -27,6 +27,9 @@ $.show_dialog = function (id) {
     // Показываем затемнение
     if ($('#body_fill').length==0) {
         $body_fill = $('<div id="body_fill"></div>');
+        $body_fill.click(function(){
+            $.hide_dialog('vote_dialog');
+        });
         $('body').append($body_fill);
     }
     $body_fill.css('opacity',0).show().animate({

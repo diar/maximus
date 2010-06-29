@@ -3682,3 +3682,223 @@ Completed in 9ms (View: 7, DB: 1) | 200 OK [http://maximus/]
 Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 17:31:20) [POST]
   Parameters: {"vote"=>{"user_mail"=>"", "user_name"=>"", "photo_id"=>"1"}}
 Completed in 2ms (View: 1, DB: 0) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 17:53:52) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 153ms (View: 34, DB: 151) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:00:16) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 25ms (View: 16, DB: 4) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:00:21) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"23", "user_name"=>"234", "photo_id"=>"2"}}
+Completed in 14ms (View: 1, DB: 0) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:01:05) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"23", "user_name"=>"234", "photo_id"=>"2"}}
+Completed in 106ms (View: 1, DB: 92) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:01:05) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 21ms (View: 15, DB: 3) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:01:23) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"345", "user_name"=>"we45r", "photo_id"=>"3"}}
+Completed in 44ms (View: 1, DB: 39) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:01:29) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"345", "user_name"=>"we45r", "photo_id"=>"3"}}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:01:55) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:01:58) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"", "user_name"=>"", "photo_id"=>"1"}}
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:01:59) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"", "user_name"=>"", "photo_id"=>"1"}}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:02:27) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"", "user_name"=>"", "photo_id"=>"1"}}
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:02:35) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"", "user_name"=>"", "photo_id"=>"1"}}
+Completed in 14ms (View: 1, DB: 2) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:02:35) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"", "user_name"=>"", "photo_id"=>"1"}}
+Completed in 27ms (View: 1, DB: 14) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:02:36) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 48ms (View: 16, DB: 29) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:02:39) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"", "user_name"=>"", "photo_id"=>"1"}}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#vote (for 127.0.0.1 at 2010-06-29 18:02:42) [POST]
+  Parameters: {"vote"=>{"user_mail"=>"345", "user_name"=>"345", "photo_id"=>"1"}}
+Completed in 81ms (View: 1, DB: 75) | 200 OK [http://maximus/special/vote]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:02:59) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 12ms (View: 8, DB: 2) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:03:55) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://maximus/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-29 18:04:08) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-29 18:04:08) [GET]
+
+ActionController::RoutingError (No route matches "/js/main.js" with {:method=>:get}):
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-29 18:04:12) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery.js" with {:method=>:get}):
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:04:16) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 20ms (View: 15, DB: 2) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:05:50) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:06:32) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:08:35) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:08:37) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 31ms (View: 10, DB: 19) | 200 OK [http://maximus/]
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-29 18:08:48) [GET]
+Rendering template within layouts/application
+Rendering special/index
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://maximus/]
