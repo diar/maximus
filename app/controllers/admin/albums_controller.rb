@@ -46,7 +46,7 @@ class Admin::AlbumsController < ApplicationController
 
 	def create
     # Работа с контентом
-		@album = Album.new(params[:catalog])
+		@album = Album.new(params[:album])
     # Настройка страницы
 		@title = 'Добавить альбом'
     # Отображение страницы
@@ -67,7 +67,7 @@ class Admin::AlbumsController < ApplicationController
 		@title = 'Редактирование альбома'
     # Отображение страницы
 		respond_to do |format|
-			if @album.update_attributes(params[:catalog])
+			if @album.update_attributes(params[:album])
 		  	flash[:notice] = 'Альбом изменен'
 		  	format.html { redirect_to(admin_albums_url) }
 			else
