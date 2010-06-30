@@ -5,11 +5,37 @@
     <title>Maximus | Панель администратора</title>
     <meta name="keywords" content="фитнес клуб" />
     <meta name="description" content="Фитнес клуб" />
-    <%= stylesheet_link_tag 'style' %>
+    <%= stylesheet_link_tag 'admin' %>
     <%= stylesheet_link_tag 'jquery.lightbox' %>
   </head>
   <body>
-    <%= yield %>
+    <div id="container">
+      <% if logged_in? %>
+        <div id="header">
+          <div class="login_block">
+            Панель администратора |
+            <%= current_user.login %> | <%= link_to 'выход', '/admin/logout' %>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <ul id="menu">
+          <a href="<%= admin_albums_path %>">
+            <li <% if current_controller?('albums') || current_controller?('photos') %>class="active"<% end %>>
+              Фотографии
+            </li>
+          </a>
+          <a href="<%= admin_users_path %>">
+            <li <% if current_controller?('users') %>class="active"<% end %>>
+              Пользователи
+            </li>
+          </a>
+        </ul>
+      <% end %>
+      <div id="page">
+        <%= yield %>
+      </div>
+    </div>
     <%= javascript_include_tag 'jquery' %>
     <%= javascript_include_tag 'jquery.lightbox' %>
     <%= javascript_include_tag 'application' %>

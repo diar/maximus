@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/*
+    Document    : desktop
+    Author      : valmon, z-mode
+    Description : Основной CSS файл
+
+
+    Основные цвета сайта:
+    Оранжевый : #FF6600;
+    Зелёный : #009900;
+
+ Reset
+-------------------------------------------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,
+font,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,dl,dt,dd,ol,ul,
+li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+{
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    line-height: 1;
+    font-family: Arial;
+    color: #000;
+    background: #72ADC0 url(/images/bg_admin.gif) repeat-x;
+    font-size: 14px;
+    min-width: 800px;
+    width: 100%;
+    width: expression(document.body.clientWidth <   952 ?   "800px" :   "auto");
+}
+
+ol,ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+    empty-cells: show;
+    border-spacing: 0;
+    width: 100%;
+}
+table td {
+    margin:0;
+    padding:5px 4px;
+    color:#000;
+}
+table td.methods {
+    text-align:right;
+}
+table tr.first {
+    background:#eee;
+}
+
+caption,th,td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: "";
+}
+
+blockquote,q {
+    quotes: "" "";
+}
+p {
+    padding:5px;
+}
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+.clear {
+    clear:both;
+}
+h1 {
+    color:#72ADC0;
+    font-size: 22px;
+    text-align: center;
+}
+/* Основные блоки
+-------------------------------------------------------------------*/
+#container {
+    width:800px;
+    margin:0 auto;
+}
+#header {
+    color:#fff;
+    float:right;
+    background: #72ADC0;
+    margin:20px 0;
+    width:400px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+}
+#header .login_block{
+    float:right;
+    margin:8px;
+}
+#page{
+    background: #fff;
+    min-height: 400px;
+    padding: 30px;
+    border:6px solid #72ADC0;
+}
+#menu{
+    margin-left: 20px;
+}
+#menu li{
+    -webkit-border-top-left-radius:4px;
+    -webkit-border-top-right-radius:4px;
+    -moz-border-radius:4px 4px 0 0;
+    border-radius:4px 4px 0 0;
+    padding: 8px;
+    color: #fff;
+    font-size: 16px;
+    background: #72ADC0;
+    height: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+#menu li.active {
+    color:#000;
+    background: #fff;
+    height: 22px;
+    margin-bottom: -6px;
+}
+#notice {
+    margin:5px;
+}
+
+/* формы
+-------------------------------------------------------------------*/
+form label{
+    display: block;
+    color: #888;
+    margin:3px 0;
+}
+form input[type="text"],
+form input[type="password"]{
+    padding:2px;
+    width:300px;
+    margin:3px 0;
+    font-size: 20px;
+    border:2px solid #72ADC0;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+form input[type="submit"]{
+    padding:4px;
+    width:120px;
+    margin:3px 0;
+    background:#72ADC0;
+    color:#fff;
+    border:none;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    cursor: pointer;
+}
+
+/* Авторизация
+-------------------------------------------------------------------*/
+#login_form {
+    width:200px;
+    margin:30px auto;
+}
+#login_form input[type="text"],
+#login_form input[type="password"]{
+    width:100%;
+}
+/* Фотографии
+-------------------------------------------------------------------*/
+.photo {
+    margin:auto;
+}
+.photo_container {
+    text-align: center;
+    width:167px;
+    padding:5px;
+    height: 167px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: table-cell;
+    border: 2px solid gray;
+}
+span.edit_photo{
+    float: right;
+}

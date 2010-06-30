@@ -1,0 +1,31 @@
+<h1><%= if !@title.nil? then @title end %></h1>
+<div class="clear"></div>
+
+<% if @users.size>0 %>
+  <table id="user_list">
+    <tr>
+      <td></td>
+      <td>логин</td>
+      <td class="methods">действия</td>
+    </tr>
+    <% counter=0 %>
+    <%@users.each do |user|%>
+      <% counter+=1 %>
+      <% css_class = counter%2==1 ? 'first' : 'second' %>
+      <tr class="<%= css_class %>">
+        <td><%= counter %></td>
+        <td><%= user.login %></td>
+        <td class="methods">
+          <!--
+          <%= link_to 'показать', admin_user_path(user) %>
+          <%= link_to 'изменить', edit_admin_user_path(user) %>
+          <%= link_to 'удалить', admin_user_path(user), :confirm => 'Вы уверены?', :method => :delete %>
+          -->
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% else %>
+  <p>Нет записей о пользователях.</p>
+<% end %>
+<p><%= link_to 'добавить пользователя', new_admin_user_path %></p>

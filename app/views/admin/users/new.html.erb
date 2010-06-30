@@ -1,19 +1,22 @@
-<h1>Sign up as a new user</h1>
+<p style="float:left"><%= link_to '← назад', admin_users_path %></p>
+<h1><%= if !@title.nil? then @title end %></h1>
+<div class="clear"></div>
+
 <% @user.password = @user.password_confirmation = nil %>
 
 <%= error_messages_for :user %>
-<% form_for :user, :url => users_path do |f| -%>
-<p><%= label_tag 'login' %><br/>
+<% form_for :user, :url => admin_users_path do |f| -%>
+<p><%= label_tag 'login','логин' %>
 <%= f.text_field :login %></p>
 
-<p><%= label_tag 'email' %><br/>
+<p><%= label_tag 'email','e-mail' %>
 <%= f.text_field :email %></p>
 
-<p><%= label_tag 'password' %><br/>
+<p><%= label_tag 'password','пароль' %>
 <%= f.password_field :password %></p>
 
-<p><%= label_tag 'password_confirmation', 'Confirm Password' %><br/>
+<p><%= label_tag 'password_confirmation', 'повтор пароля' %>
 <%= f.password_field :password_confirmation %></p>
 
-<p><%= submit_tag 'Sign up' %></p>
+<p><%= submit_tag 'добавить' %></p>
 <% end -%>

@@ -1,6 +1,6 @@
 class SpecialController < ApplicationController
   def index
-    @photos = Photo.all
+    @photos = Photo.all(:conditions=>['in_voting',true])
     respond_to do |format|
       format.html
     end

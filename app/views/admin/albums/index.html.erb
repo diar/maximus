@@ -1,1 +1,29 @@
-<%= "index.html" %>
+<h1><%= if !@title.nil? then @title end %></h1>
+<div class="clear"></div>
+
+<% if @albums.size>0 %>
+  <table id="album_list">
+    <tr>
+      <td></td>
+      <td>название альбома</td>
+      <td class="methods">действия</td>
+    </tr>
+    <% counter=0 %>
+    <%@albums.each do |album|%>
+      <% counter+=1 %>
+      <% css_class = counter%2==1 ? 'first' : 'second' %>
+      <tr class="<%= css_class %>">
+        <td><%= counter %></td>
+        <td><%= album.title %></td>
+        <td class="methods">
+          <%= link_to 'показать', admin_album_path(album) %>
+          <%= link_to 'изменить', edit_admin_album_path(album) %>
+          <%= link_to 'удалить', admin_album_path(album), :confirm => 'Вы уверены?', :method => :delete %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% else %>
+  <p>Нет записей об альбомах.</p>
+<% end %>
+<p><%= link_to 'добавить альбом', new_admin_album_path %></p>

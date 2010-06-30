@@ -1,0 +1,18 @@
+<p style="float:left"><%= link_to '← назад', admin_albums_path %></p>
+<h1><%= if !@title.nil? then @title end %></h1>
+<div class="clear"></div>
+
+<% form_for @album, :url => { :action => 'update' } do |f| %>
+  <p><%= f.error_messages %></p>
+  <p>
+    <%= label_tag 'title', 'заголовок' %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.check_box :visible %>
+    <span>отображать на сайте</span>
+  </p>
+  <p>
+    <%= f.submit 'изменить' %>
+  </p>
+<% end %>
