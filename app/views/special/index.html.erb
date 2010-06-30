@@ -1,3 +1,6 @@
+<script type="text/javascript">
+  var vote_page = true;
+</script>
 <div id="content">
   <div class="right">
     <div class="caption">Контакты:</div>
@@ -24,21 +27,25 @@
     <div id="vote_header">Голосование за фотографии</div>
     <div id="vote_content">
       <div class="photos">
-        <% @photos.each do |photo| %>
-        <div class="photo">
-          <div class="photo_container">
-            <img src="/images/photos/<%= photo.src_min %>" />
-           </div>
-          <div class="vote_block">
-            <a href="#" class="do_vote">Проголосовать</a>
-            <span><%= photo.votes.count %></span>
-            <span class="vote_id" style="display: none;"><%= photo.id %></span>
-          </div>
+        <div class="photos_container">
+          <% @photos.each do |photo| %>
+            <div class="photo">
+              <div class="photo_container">
+                <a class="photo_link" href="/images/photos/<%= photo.src_min %>" >
+                  <img src="/images/photos/<%= photo.src_min %>" />
+                </a>
+              </div>
+              <div class="vote_block">
+                <a href="#" class="do_vote">Проголосовать</a>
+                <span><%= photo.votes.count %></span>
+                <span class="vote_id" style="display: none;"><%= photo.id %></span>
+              </div>
+            </div>
+          <% end %>
         </div>
-        <% end %>
       </div>
-      <img class="arrow_left" src="images/photo-arrow-left.jpg" />
-      <img class="arrow_right" src="images/photo-arrow-right.jpg" />
+      <div class="arrow_left"></div>
+      <div class="arrow_right"></div>
     </div>
     <div id="vote_content_right"></div>
   </div>

@@ -192,7 +192,8 @@ table td {
 #content #page {
     width: 558px;
     padding-right: 20px;
-    font-size: 11px;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 #content .right {
@@ -344,10 +345,13 @@ table td {
     width: auto;
     background:#dedede;
 }
+#vote_content .photos_container {
+    width: 10000px;
+}
 #vote_content .photos{
     margin-left:45px;
     height:198px;
-    width: auto;
+    width: 790px;
     overflow:hidden;
 }
 #vote_content .photo{
@@ -382,14 +386,28 @@ table td {
     float:right;
 }
 #vote_content .arrow_left{
+    background: url(/images/photo-arrows.jpg) no-repeat 0 0;
+    width:21px;
+    height:35px;
     position:absolute;
     top:150px;
     left:20px;
 }
 #vote_content .arrow_right{
+    background: url(/images/photo-arrows.jpg) no-repeat 0 -35px;
+    width:21px;
+    height:35px;
     position:absolute;
     top:150px;
     right:20px;
+}
+#vote_content .arrow_left.active {
+    cursor: pointer;
+    background: url(/images/photo-arrows.jpg) no-repeat 0 -70px;
+}
+#vote_content .arrow_right.active {
+    cursor: pointer;
+    background: url(/images/photo-arrows.jpg) no-repeat 0 -105px;
 }
 #vote_content_right {
     position:absolute;

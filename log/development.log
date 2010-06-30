@@ -88,3 +88,483 @@ Migrating to CreateVotes (20100629121939)
   [4;36;1mSQL (25.3ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
   [4;35;1mSQL (1.1ms)[0m   [0mdescribe `votes`[0m
   [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `votes`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:12:54) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 67ms (View: 43, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:13:34) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 27ms (View: 17, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:13:46) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 64ms (View: 41, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:13:57) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 27ms (View: 17, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:14:06) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 66ms (View: 42, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:15:28) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 27ms (View: 17, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:15:36) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 26ms (View: 15, DB: 4) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:16:37) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 23ms (View: 13, DB: 2) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:24:01) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:25:17) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:29:02) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 30ms (View: 20, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:29:03) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:30:01) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 25ms (View: 14, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:30:08) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:34:29) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 118ms (View: 107, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:34:31) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:34:46) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 30ms (View: 19, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:35:24) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 25ms (View: 14, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:35:36) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:39:43) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:40:10) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 27ms (View: 16, DB: 4) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:41:11) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 23ms (View: 14, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:41:55) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 157ms (View: 145, DB: 5) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:42:22) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 23ms (View: 13, DB: 2) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:49:09) [GET]
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 67ms (View: 42, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:49:48) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 28ms (View: 17, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 13:51:34) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 23ms (View: 13, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 14:00:54) [GET]
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 68ms (View: 44, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 14:02:21) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 29ms (View: 18, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-06-30 14:03:41) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 5) [0m
+Completed in 30ms (View: 20, DB: 3) | 200 OK [http://maximus/]
