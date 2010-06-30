@@ -125,6 +125,9 @@ h1 {
 #menu{
     margin-left: 20px;
 }
+#menu a{
+    float:left;
+}
 #menu li{
     -webkit-border-top-left-radius:4px;
     -webkit-border-top-right-radius:4px;
