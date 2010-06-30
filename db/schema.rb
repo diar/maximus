@@ -9,14 +9,40 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100629121939) do
+ActiveRecord::Schema.define(:version => 20100630110904) do
+
+  create_table "albums", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "photos", :force => true do |t|
     t.string   "src"
     t.string   "src_min"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
+    t.integer  "product_id"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
+
+  create_table "users", :force => true do |t|
+    t.string   "login",                     :limit => 40
+    t.string   "name",                      :limit => 100, :default => ""
+    t.string   "email",                     :limit => 100
+    t.string   "crypted_password",          :limit => 40
+    t.string   "salt",                      :limit => 40
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "remember_token",            :limit => 40
+    t.datetime "remember_token_expires_at"
+  end
+
+  add_index "users", ["login"], :name => "index_users_on_login", :unique => true
 
   create_table "votes", :force => true do |t|
     t.integer  "photo_id"
