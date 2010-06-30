@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100630141747) do
+ActiveRecord::Schema.define(:version => 20100630154325) do
 
   create_table "albums", :force => true do |t|
     t.string   "title"
@@ -19,8 +19,6 @@ ActiveRecord::Schema.define(:version => 20100630141747) do
   end
 
   create_table "photos", :force => true do |t|
-    t.string   "src"
-    t.string   "src_min"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
