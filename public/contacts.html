@@ -1,130 +1,121 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"> 
-  <head> 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-    <title>Maximus | Фитнес клуб</title> 
-    <meta name="keywords" content="фитнес клуб" /> 
-    <meta name="description" content="Фитнес клуб" /> 
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
-  </head> 
-  <body>
-    <div id="container">
-      <div id="header">
-	<img src="images/logo.jpg" id="logo" />
-	<a href="about.html" class="menu_item">О максимусе</a>
-	<a href="#" class="menu_item">Прейскурант цен</a>
-	<a href="#" class="menu_item">Фотогалерея</a>
-	<a href="/" class="menu_item  ">Акция</a>
-	<a href="#" class="menu_item">Документы</a>
-	<a href="contacts.html" class="menu_item last active">Контакты</a>
-	<script type="text/javascript" src="js/jquery.js"></script>
-      </div>
-      <div id="banner">
-	<img id="banner_image" src="images/action.jpg" /><br />
-	<div id="banner_text">
-	  <h1 class="caption_small">Стань лицом Фитнес Клуба &laquo;Maximus&raquo;</h1>
-	  <div class="hr"></div>
-<!--	  <h2 class="title">Приобрети абонемент за 5600 руб. / мес.</h2>-->
-<!--	  <div class="description">
-	    В последнее время здоровый образ жизни становится все более популярным.
-	    И не может не радовать тот факт, что фитнес клубы Казани появляются как 
-	    грибы после дождя занятий побавловать себя бассейном, сауной или солярием.
-	  </div>
--->
-<div class="description">
-Участвуй  в конкурсе «Стань лицом Фитнес Клуба <br />
- «Maximus» и выиграй эксклюзивную фото сессию!<br />
-<br />
-Кроме того, фото победителя появится на облож-<br />
-ке августовского  номера журнала «Maximus»! <br />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Maximus | Фитнес клуб</title>
+        <meta name="keywords" content="фитнес клуб" />
+        <meta name="description" content="Фитнес клуб" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <img src="images/logo.jpg" id="logo" />
+                <a href="about.html" class="menu_item">О максимусе</a>
+                <a href="#" class="menu_item">Экскурсия</a>
+                <a href="#" class="menu_item">Фотогалерея</a>
+                <a href="/" class="menu_item">Акция</a>
+                <a href="cards.html" class="menu_item">Клубные карты</a>
+                <a href="contacts.html" class="menu_item active last">Контакты</a>
+                <script type="text/javascript" src="js/jquery.js"></script>
+            </div>
+            <div id="banner">
+                <img id="banner_image" src="images/action.jpg" /><br />
+                <div id="banner_text">
+                    <h1 class="caption_small">Стань лицом Фитнес Клуба &laquo;Maximus&raquo;</h1>
+                    <div class="hr"></div>
+                    <!--	  <h2 class="title">Приобрети абонемент за 5600 руб. / мес.</h2>-->
+                    <!--	  <div class="description">
+                    В последнее время здоровый образ жизни становится все более популярным.
+                    И не может не радовать тот факт, что фитнес клубы Казани появляются как
+                    грибы после дождя занятий побавловать себя бассейном, сауной или солярием.
+                    </div>
+                    -->
+                    <div class="description">
+                        Участвуй  в конкурсе «Стань лицом Фитнес Клуба <br />
+                        «Maximus» и выиграй эксклюзивную фото сессию!<br />
+                        <br />
+                        Кроме того, фото победителя появится на облож-<br />
+                        ке августовского  номера журнала «Maximus»! <br />
+                    </div>
+                    <!--<a class="banner_link" href="#">ЗАПИШИСЬ </a> <a href="#" class="banner_link" style="margin-left:115px; margin-top:-10px;"><img src="images/join.jpg" /></a>-->
+                </div>
+                <div id="banner_clear"></div>
+            </div>
+            <div id="content">
+                <div class="right">
+                    <div class="caption">Контакты: </div>
+                    <span class="address2">г. Казань <br />
+                        ул. Минская, 9 ТК "Азино"</span>
+                    <div class="contact">
+                        <span class="tel"><span>(843)</span>537-15-15</span><br /><br />
+                    </div>
+                </div>
+                <div id="page">
+                    <h2 class="title">Карта проезда:</h2>
+                    <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту  (начало) -->
+                    <script src="http://api-maps.yandex.ru/1.1/?key=ANYAKkwBAAAAr9NUYwIATMtGC8OoKZGUcCZQgSMSEIL-hVcAAAAAAAAAAADgYwULe63Aa2JjWQboeb3NtthNfg==&wizard=constructor" type="text/javascript"></script>
+                    <script type="text/javascript">
+                        YMaps.jQuery(function () {
+                            var map = new YMaps.Map(YMaps.jQuery("#YMapsID-192")[0]);
+                            map.setCenter(new YMaps.GeoPoint(49.229928,55.77379), 17, YMaps.MapType.MAP);
+                            map.addControl(new YMaps.Zoom());
+                            map.addControl(new YMaps.ToolBar());
+                            map.addControl(new YMaps.TypeControl());
 
+                            YMaps.Styles.add("constructor#pmlbmPlacemark", {
+                                iconStyle : {
+                                    href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmlbm.png",
+                                    size : new YMaps.Point(28,29),
+                                    offset: new YMaps.Point(-8,-27)
+                                }
+                            });
 
+                            map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(49.230465,55.773391), "constructor#pmlbmPlacemark", "г. Казань <br/>ул. Минская, 9 ТК \"Азино\"<br/>тел. (843)537-15-15<br/>"));
 
-	  </div>
+                            function createObject (type, point, style, description) {
+                                var allowObjects = ["Placemark", "Polyline", "Polygon"],
+                                index = YMaps.jQuery.inArray( type, allowObjects),
+                                constructor = allowObjects[(index == -1) ? 0 : index];
+                                description = description || "";
 
-<!--	  <a class="banner_link" href="#">ЗАПИШИСЬ </a> <a href="#" class="banner_link" style="margin-left:115px; margin-top:-10px;"><img src="images/join.jpg" /></a>-->
-	</div>
-	<div id="banner_clear"></div>
-      </div>
-      <div id="content">
-	<div class="right">
-    	
-        <div class="caption">Контакты: </div>
-	    <span class="address2">г. Казань <br />
-ул. Минская, 9 ТК "Азино"</span>
-        
-        <div class="contact">
-	        <span class="tel"><span>(843)</span>537-15-15</span><br /><br />
-        
-        </div>
+                                var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+                                object.description = description;
 
-        
-	</div>
-	<div id="page">
-	    <h2 class="title">Карта проезда:</h2>
-<!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту  (начало) -->
-<script src="http://api-maps.yandex.ru/1.1/?key=ANYAKkwBAAAAr9NUYwIATMtGC8OoKZGUcCZQgSMSEIL-hVcAAAAAAAAAAADgYwULe63Aa2JjWQboeb3NtthNfg==&wizard=constructor" type="text/javascript"></script>
-<script type="text/javascript">
-    YMaps.jQuery(function () {
-        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-192")[0]);
-        map.setCenter(new YMaps.GeoPoint(49.229928,55.77379), 17, YMaps.MapType.MAP);
-        map.addControl(new YMaps.Zoom());
-        map.addControl(new YMaps.ToolBar());
-        map.addControl(new YMaps.TypeControl());
+                                return object;
+                            }
+                        });
+                    </script>
 
-        YMaps.Styles.add("constructor#pmlbmPlacemark", {
-            iconStyle : {
-                href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmlbm.png",
-                size : new YMaps.Point(28,29),
-                offset: new YMaps.Point(-8,-27)
-            }
-        });
-
-       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(49.230465,55.773391), "constructor#pmlbmPlacemark", "г. Казань <br/>ул. Минская, 9 ТК \"Азино\"<br/>тел. (843)537-15-15<br/>"));
-
-        function createObject (type, point, style, description) {
-            var allowObjects = ["Placemark", "Polyline", "Polygon"],
-                index = YMaps.jQuery.inArray( type, allowObjects),
-                constructor = allowObjects[(index == -1) ? 0 : index];
-                description = description || "";
-
-            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
-            object.description = description;
-
-            return object;
-        }
-    });
-</script>
-
-<div id="YMapsID-192" style="width:450px;height:350px"></div>
-<div style="width:450px;text-align:right;font-family:Arial"><a href="http://api.yandex.ru/maps/tools/constructor/" style="color:#1A3DC1">Создано с помощью инструментов Яндекс.Карт</a></div>
-<!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
-	</div>
-    <div class="clear"></div>
-      </div>
-      <div id="footer">
-	<div class="right">
-	    
-	</div>
-	<div class="left">
-	  <div class="text2">
-	    <h2 class="title">Вакансии</h2>
-	    <p> В Фитнес Клуб "Maximus" требуются инструктора тренажерного зала и инструктора групповых программ <b>537-15-15</b>.</p>
-<br/>
-<p>В Фитнес Клуб "Maximus" требуются администраторы и менеджеры по продажам <b>573-15-15</b>.</p>
-	  	</div>
-    <!--	<div class="pdf">
+                    <div id="YMapsID-192" style="width:450px;height:350px"></div>
+                    <div style="width:450px;text-align:right;font-family:Arial"><a href="http://api.yandex.ru/maps/tools/constructor/" style="color:#1A3DC1">Создано с помощью инструментов Яндекс.Карт</a></div>
+                    <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div id="footer">
+                <div class="right">
+                </div>
+                <div class="left">
+                    <div class="text2">
+                        <h2 class="title">Вакансии</h2>
+                        <p> В Фитнес Клуб "Maximus" требуются инструктора тренажерного зала и инструктора групповых программ <b>537-15-15</b>.</p>
+                        <br/>
+                        <p>В Фитнес Клуб "Maximus" требуются администраторы и менеджеры по продажам <b>573-15-15</b>.</p>
+                    </div>
+                    <!--	<div class="pdf">
 		<a href="#">Скачать 
-        презентацию и тарифы</a><br />
-        (2 mb)
+                        презентацию и тарифы</a><br />
+                        (2 mb)
       	</div>-->
-		<div><p>
-		<br />
-		<img src="images/copy.jpg" /><br />
-        Copyright, 2010 Maximus
-		</p></div>
-      </div>
-    </div>
-    <div id="hr"></div>
-  </body>
+                    <div><p>
+                            <br />
+                            <img src="images/copy.jpg" /><br />
+                            Copyright, 2010 Maximus
+                        </p></div>
+                </div>
+            </div>
+            <div id="hr"></div>
+        </div>
+    </body>
 </html>
