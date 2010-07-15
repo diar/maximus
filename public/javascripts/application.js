@@ -11,10 +11,13 @@ $(document).ready(function() {
         imageBlank:   '/images/lightbox-blank.gif',
         fixedNavigation:true
     });
-    // Активируем ckeditor
-    $('.ckeditor').ckeditor();
+    // Если находимся в админке
+    if (current_page=="admin"){
+        // Активируем ckeditor
+        $('.ckeditor').ckeditor();
+    }
     // Если находимся на странице голосования
-    if (defined(vote_page)){
+    if (current_page=="vote"){
         $('.do_vote').click(function(){
             vote_id = $(this).parents('.photo').find('.vote_id').html();
             $('#vote_id').val(vote_id);
@@ -61,6 +64,39 @@ $(document).ready(function() {
                 check_arrows_active ();
             }
         });
+    }
+    // Если находимся на странице экскурсии
+    if (current_page=="tour"){
+        rooms = Array ();
+        rooms[1] = {'x':200,'y':270,'title':'Тренажерный зал','link':'gym'};
+        rooms[2] = {'x':470,'y':220,'title':'Кардиозал','link':'kardiozal'};
+        rooms[3] = {'x':700,'y':350,'title':'Зал групповых программ','link':'groups'};
+        rooms[4] = {'x':450,'y':140,'title':'Зал восточных единоборств','link':'east'};
+        rooms[5] = {'x':120,'y':170,'title':'Студия сайкла','link':'cycle'};
+        rooms[6] = {'x':540,'y':110,'title':'OUTDOOR - занятия','link':'outdoor'};
+        rooms[7] = {'x':240,'y':150,'title':'Детская комната','link':'nursery'};
+        rooms[8] = {'x':150,'y':410,'title':'Турецкая баня','link':'turkish'};
+        rooms[9] = {'x':180,'y':440,'title':'Финская сауна','link':'sauna'};
+        rooms[10] = {'x':160,'y':470,'title':'Инфракрасная сауна','link':'infrared'};
+        rooms[11] = {'x':360,'y':620,'title':'Фитнес бар','link':false};
+        rooms[12] = {'x':340,'y':500,'title':'Джакузи','link':false};
+        for (r in rooms) {
+            img = parseInt(Math.random()*5)+1;
+            if (rooms[r]['link']) {
+                link = '<a href="/tour/'+rooms[r]['link']+'">'+rooms[r]['title']+'</a>';
+            } else {
+                link = rooms[r]['title'];
+            }
+            $('<div class="sticker"><img src="/images/stickers/'+img+'.png">'+
+                '<div class="number">'+r+'</div>'+
+                '<div class="title">'+link+'</div>'+
+            '</div>')
+            .appendTo('#tour_map')
+            .css({
+                'left':rooms[r]['x'],
+                'top':rooms[r]['y']
+            });
+        }
     }
 });
 // Показать диалог

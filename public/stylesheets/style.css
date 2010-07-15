@@ -471,3 +471,41 @@ h1 {
     padding-top:5px;
     height:30px;
 }
+/** Страница экскурсии
+--------------------------------------------------------------------**/
+#tour_map {
+    position:relative;
+}
+.sticker {
+    position: absolute;
+    cursor:pointer;
+}
+.sticker img {
+    width:40px;
+}
+.sticker:hover img {
+    width:50px;
+    margin: -5px 0 0 -5px;
+}
+.sticker .number {
+    position: relative;
+    top:-28px;
+    left:13px;
+    font-size: 18px;
+    color:#fff;
+}
+.sticker .title {
+    position: relative;
+    top:-50px;
+    left:50px;
+    display:none;
+    font-size: 18px;
+    background: #fff;
+    padding:5px;
+}
+.sticker:hover .title {
+    display:block;
+}
+.sticker:hover .number {
+    margin: -5px 0 0 0;
+}
