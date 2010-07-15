@@ -3797,3 +3797,546 @@ Rendering template within layouts/admin
 Rendering admin/rooms/index
   [4;36;1mRoom Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
 Completed in 31ms (View: 11, DB: 2) | 200 OK [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AlbumsController#index (for 127.0.0.1 at 2010-07-15 17:17:04) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mAlbum Load (0.1ms)[0m   [0mSELECT * FROM `albums` [0m
+Rendering template within layouts/admin
+Rendering admin/albums/index
+  [4;36;1mAlbum Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://maximus/admin/albums]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2010-07-15 17:17:05) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/admin
+Rendering admin/users/index
+Completed in 33ms (View: 17, DB: 2) | 200 OK [http://maximus/admin/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:17:06) [GET]
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Load (0.2ms)[0m   [0;1mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;35;1mRoom Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Completed in 142ms (View: 98, DB: 3) | 200 OK [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SpecialController#index (for 127.0.0.1 at 2010-07-15 17:17:09) [GET]
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM `photos` WHERE (in_voting) [0m
+Rendering template within layouts/application
+Rendering special/index
+  [4;35;1mPhoto Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mVote Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `votes`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `votes` WHERE (`votes`.photo_id = 7) [0m
+Completed in 81ms (View: 63, DB: 3) | 200 OK [http://maximus/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AlbumsController#index (for 127.0.0.1 at 2010-07-15 17:33:54) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/admin
+Rendering admin/albums/index
+  [4;35;1mAlbum Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 81ms (View: 37, DB: 3) | 200 OK [http://maximus/admin/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:33:56) [GET]
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Load (0.2ms)[0m   [0;1mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;35;1mRoom Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Completed in 81ms (View: 33, DB: 3) | 200 OK [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#destroy (for 127.0.0.1 at 2010-07-15 17:34:00) [DELETE]
+  Parameters: {"authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mRoom Load (0.1ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+[paperclip] Deleting attachments.
+  [4;35;1mRoom Destroy (0.6ms)[0m   [0mDELETE FROM `rooms` WHERE `id` = 1[0m
+  [4;36;1mSQL (100.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 134ms (DB: 104) | 302 Found [http://maximus/admin/rooms/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:34:00) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Load (0.4ms)[0m   [0mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+Completed in 32ms (View: 7, DB: 2) | 200 OK [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#new (for 127.0.0.1 at 2010-07-15 17:34:02) [GET]
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Rendering template within layouts/admin
+Rendering admin/rooms/new
+Completed in 179ms (View: 138, DB: 3) | 200 OK [http://maximus/admin/rooms/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:35:00) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"gym", "title"=>"Тренажерный за\320\273", "description"=>"<p>\r\n\t&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tПлощадь тренажерного зала более 600 кв. м., Суперсовременный тренажерный зал, оборудованный в соответствии с самыми последними мировыми тенденциями. Здесь представлено более 100 тренажеров ведущих производителей: <span lang=\"en-US\">Panatta</span> <span lang=\"en-US\">Sport</span> (Италия) , <span lang=\"en-US\">Tuff</span> <span lang=\"en-US\">Stuff</span> (США), <span lang=\"en-US\">IronBull</span> (Китай). Функционально зал разделен на три зоны: зона силовых тренажеров ,зона свободных весов и стретч станция. Широкий спектр силовых тренажеров, рассчитанных на различные группы мышц сделают Ваше тело сильным и подтянутым. Наше оборудование подойдет и продвинутому атлету, и новичку.</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tФункциональная планировка, современная система кондиционирования, продуманное освещение &ndash; всё это сделает ваш тренировочный процесс приятным и эффективным.</p>\r\n"}}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRoom Create (200.3ms)[0m   [0mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('gym', NULL, '2010-07-15 13:35:00', 'Тренажерный зал', NULL, '2010-07-15 13:35:00', NULL, NULL, '<p>\r\n	&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	Площадь тренажерного зала более 600 кв. м., Суперсовременный тренажерный зал, оборудованный в соответствии с самыми последними мировыми тенденциями. Здесь представлено более 100 тренажеров ведущих производителей: <span lang=\"en-US\">Panatta</span> <span lang=\"en-US\">Sport</span> (Италия) , <span lang=\"en-US\">Tuff</span> <span lang=\"en-US\">Stuff</span> (США), <span lang=\"en-US\">IronBull</span> (Китай). Функционально зал разделен на три зоны: зона силовых тренажеров ,зона свободных весов и стретч станция. Широкий спектр силовых тренажеров, рассчитанных на различные группы мышц сделают Ваше тело сильным и подтянутым. Наше оборудование подойдет и продвинутому атлету, и новичку.</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	Функциональная планировка, современная система кондиционирования, продуманное освещение &ndash; всё это сделает ваш тренировочный процесс приятным и эффективным.</p>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (68.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 323ms (DB: 272) | 302 Found [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:35:01) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Load (0.4ms)[0m   [0mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;36;1mRoom Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Completed in 32ms (View: 12, DB: 3) | 200 OK [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#new (for 127.0.0.1 at 2010-07-15 17:35:11) [GET]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Rendering template within layouts/admin
+Rendering admin/rooms/new
+Completed in 34ms (View: 12, DB: 2) | 200 OK [http://maximus/admin/rooms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:37:41) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"kardiozal", "title"=>"Кардиоза\320\273", "description"=>"<p>\r\n\t&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tКардио-тренажеры <span lang=\"en-US\">Panatta</span> <span lang=\"en-US\">Sport</span>(Италия), <span lang=\"en-US\">Octane</span> <span lang=\"en-US\">Fitness</span>(Нидерланды),<span lang=\"en-US\">True</span> <span lang=\"en-US\">Fitness</span> (США) последнего поколения оснащены сенсорными датчиками считывания пульса и мониторами, которые помогут Вам контролировать интенсивность нагрузок .Для Вас представлены беговые дорожки, кросс-тренажёры, эллипсы, велотренажеры, степперы. Тренировки на кардиотренажерах укрепляют сердечно-сосудистую и дыхательную системы организма, поднимают жизненный тонус и дарят вам хорошее настроение. &nbsp;</p>\r\n"}}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mRoom Create (0.5ms)[0m   [0;1mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('kardiozal', NULL, '2010-07-15 13:37:41', 'Кардиозал', NULL, '2010-07-15 13:37:41', NULL, NULL, '<p>\r\n	&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	Кардио-тренажеры <span lang=\"en-US\">Panatta</span> <span lang=\"en-US\">Sport</span>(Италия), <span lang=\"en-US\">Octane</span> <span lang=\"en-US\">Fitness</span>(Нидерланды),<span lang=\"en-US\">True</span> <span lang=\"en-US\">Fitness</span> (США) последнего поколения оснащены сенсорными датчиками считывания пульса и мониторами, которые помогут Вам контролировать интенсивность нагрузок .Для Вас представлены беговые дорожки, кросс-тренажёры, эллипсы, велотренажеры, степперы. Тренировки на кардиотренажерах укрепляют сердечно-сосудистую и дыхательную системы организма, поднимают жизненный тонус и дарят вам хорошее настроение. &nbsp;</p>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (42.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 103ms (DB: 46) | 302 Found [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:37:42) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Load (0.4ms)[0m   [0;1mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Completed in 44ms (View: 16, DB: 4) | 200 OK [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#new (for 127.0.0.1 at 2010-07-15 17:37:45) [GET]
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Rendering template within layouts/admin
+Rendering admin/rooms/new
+Completed in 35ms (View: 12, DB: 4) | 200 OK [http://maximus/admin/rooms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:38:47) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"groups", "title"=>"Зал групповых програм\320\274", "description"=>"<p>\r\n\t&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tК вашим услугам самые разнообразные фитнес-программы для людей любого возраста и уровня подготовленности. От классических направлений до новомодных программ с различным оборудованием. Профессионально оборудованные залы с безопасным &quot;плавающим&quot; паркетом, динамическим освещением и профессиональным звуком. Независимо от Вашего выбора Вы всегда попадете в руки настоящих профессионалов.</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tНаш тренерский состав предлагает уникальные и самые передовые программы, отвечающие современным тенденциям. Это <b>аэробные направления</b>, <b>силовые классы</b>, <b>смешанные форматы</b>, <b>танцевальные направления</b>, <b>направления </b><span lang=\"en-US\"><b>Body</b></span><b> </b><span lang=\"en-US\"><b>Mind</b></span>, <b>фитнес для будущих мам.</b> И кроме того.... у нас всегда будет возможность удивить Вас снова и снова, предлагая новые уроки и направления, ведь команда нашего центра - профессионалы в своем деле.</p>\r\n"}}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRoom Create (72.3ms)[0m   [0mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('groups', NULL, '2010-07-15 13:38:47', 'Зал групповых программ', NULL, '2010-07-15 13:38:47', NULL, NULL, '<p>\r\n	&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	К вашим услугам самые разнообразные фитнес-программы для людей любого возраста и уровня подготовленности. От классических направлений до новомодных программ с различным оборудованием. Профессионально оборудованные залы с безопасным &quot;плавающим&quot; паркетом, динамическим освещением и профессиональным звуком. Независимо от Вашего выбора Вы всегда попадете в руки настоящих профессионалов.</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	Наш тренерский состав предлагает уникальные и самые передовые программы, отвечающие современным тенденциям. Это <b>аэробные направления</b>, <b>силовые классы</b>, <b>смешанные форматы</b>, <b>танцевальные направления</b>, <b>направления </b><span lang=\"en-US\"><b>Body</b></span><b> </b><span lang=\"en-US\"><b>Mind</b></span>, <b>фитнес для будущих мам.</b> И кроме того.... у нас всегда будет возможность удивить Вас снова и снова, предлагая новые уроки и направления, ведь команда нашего центра - профессионалы в своем деле.</p>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (46.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 157ms (DB: 124) | 302 Found [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:38:47) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Load (11.4ms)[0m   [0mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;36;1mRoom Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Completed in 51ms (View: 17, DB: 14) | 200 OK [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#new (for 127.0.0.1 at 2010-07-15 17:39:04) [GET]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Rendering template within layouts/admin
+Rendering admin/rooms/new
+Completed in 36ms (View: 11, DB: 3) | 200 OK [http://maximus/admin/rooms/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:41:19) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"east", "title"=>"Зал восточных единоборст\320\262", "description"=>"<p>\r\n\tДля любителей бокса мы предложим зал с профессиональным рингом. Оснащение зала - по самым взыскательным требованиям. Нагрузка на все мышцы. Отличный способ сжигания лишних калорий и отрицательных эмоций. Развивает координацию движений, быстроту реакций и уверенность в себе<b>. </b> Также будут представлены направления<b> Каратэ, Хатха йога, Кундалини йога, Капоэйра.</b> Все направления объединяют в себе техники, позволяющие управлять своей внутренней энергией и устанавливать контакт с окружающим миром. Восточные направления позволяют укрепить здоровье, уравновесить эмоции и развить в себе способность к адекватной реакции на любые обстоятельства. За несколько месяцев занятий движения приобретают легкость, улучшается реакция, возрастает уверенность в себе, развивается самообладание.</p>\r\n"}}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mRoom Create (0.7ms)[0m   [0;1mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('east', NULL, '2010-07-15 13:41:19', 'Зал восточных единоборств', NULL, '2010-07-15 13:41:19', NULL, NULL, '<p>\r\n	Для любителей бокса мы предложим зал с профессиональным рингом. Оснащение зала - по самым взыскательным требованиям. Нагрузка на все мышцы. Отличный способ сжигания лишних калорий и отрицательных эмоций. Развивает координацию движений, быстроту реакций и уверенность в себе<b>. </b> Также будут представлены направления<b> Каратэ, Хатха йога, Кундалини йога, Капоэйра.</b> Все направления объединяют в себе техники, позволяющие управлять своей внутренней энергией и устанавливать контакт с окружающим миром. Восточные направления позволяют укрепить здоровье, уравновесить эмоции и развить в себе способность к адекватной реакции на любые обстоятельства. За несколько месяцев занятий движения приобретают легкость, улучшается реакция, возрастает уверенность в себе, развивается самообладание.</p>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (64.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 100ms (DB: 69) | 302 Found [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:41:19) [GET]
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Load (17.0ms)[0m   [0;1mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;35;1mRoom Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Completed in 204ms (View: 19, DB: 20) | 200 OK [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#new (for 127.0.0.1 at 2010-07-15 17:41:22) [GET]
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Rendering template within layouts/admin
+Rendering admin/rooms/new
+Completed in 53ms (View: 28, DB: 3) | 200 OK [http://maximus/admin/rooms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:43:47) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"cycle", "title"=>"Студия сайкл\320\260", "description"=>"<p>\r\n\t&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tБезударная тренировка на велотренажерах <span lang=\"en-US\">Schwinn</span> <span lang=\"en-US\">Fitness</span>, имитирующих горный велосипед. Прекрасное средство для коррекции веса, а также хорошая силовая тренировка, направленная на увеличение функциональных возможностей сердечно-сосудистой системы. Зажигательная программа для различного уровня подготовки.</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tПерсональная или групповая велогонка.</p>\r\n"}}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRoom Create (0.4ms)[0m   [0mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('cycle', NULL, '2010-07-15 13:43:47', 'Студия сайкла', NULL, '2010-07-15 13:43:47', NULL, NULL, '<p>\r\n	&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	Безударная тренировка на велотренажерах <span lang=\"en-US\">Schwinn</span> <span lang=\"en-US\">Fitness</span>, имитирующих горный велосипед. Прекрасное средство для коррекции веса, а также хорошая силовая тренировка, направленная на увеличение функциональных возможностей сердечно-сосудистой системы. Зажигательная программа для различного уровня подготовки.</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	Персональная или групповая велогонка.</p>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (48.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 82ms (DB: 52) | 302 Found [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:43:47) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Load (0.6ms)[0m   [0mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;36;1mRoom Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Completed in 41ms (View: 20, DB: 3) | 200 OK [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#new (for 127.0.0.1 at 2010-07-15 17:43:49) [GET]
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Rendering template within layouts/admin
+Rendering admin/rooms/new
+Completed in 33ms (View: 10, DB: 3) | 200 OK [http://maximus/admin/rooms/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:45:21) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"outdoor", "title"=>"OUTDOOR - занятия.", "description"=>"<p>\r\n\t&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tВ хорошую погоду направления <span lang=\"en-US\">Mind</span>&amp;<span lang=\"en-US\">Body</span> и другие форматы уроков будут проходить на специально оборудованной площадке на крыше . Эти занятия помогут Вам обрести гармонию, спокойствие и получить истинное удовольствие от тренировки. &nbsp;</p>\r\n"}}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mRoom Create (0.6ms)[0m   [0;1mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('outdoor', NULL, '2010-07-15 13:45:21', 'OUTDOOR - занятия.', NULL, '2010-07-15 13:45:21', NULL, NULL, '<p>\r\n	&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	В хорошую погоду направления <span lang=\"en-US\">Mind</span>&amp;<span lang=\"en-US\">Body</span> и другие форматы уроков будут проходить на специально оборудованной площадке на крыше . Эти занятия помогут Вам обрести гармонию, спокойствие и получить истинное удовольствие от тренировки. &nbsp;</p>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (40.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 212ms (DB: 46) | 302 Found [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:45:21) [GET]
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Load (0.8ms)[0m   [0;1mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;35;1mRoom Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Completed in 49ms (View: 24, DB: 3) | 200 OK [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#new (for 127.0.0.1 at 2010-07-15 17:45:32) [GET]
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Rendering template within layouts/admin
+Rendering admin/rooms/new
+Completed in 34ms (View: 11, DB: 3) | 200 OK [http://maximus/admin/rooms/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:47:04) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"nursery", "title"=>"Детская комнат\320\260", "description"=>"<p>\r\n\t&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tДетей от 3-х лет можно смело брать с собой в фитнес-клуб. Специально для ребят в &laquo;<span lang=\"en-US\">Maximus</span>&raquo; создана детская комната. В ней Вы всегда сможете оставить своего ребенка на время занятий спортом. В это время с Вашим ребенком будет заниматься инструктор Клуба. Для детей своя программа: увлекательная, в игровой форме и очень разнообразная. С помощью общения, игр и рисунков время в ожидании родителей пролетит незаметно и Вы сможете с комфортом провести время в нашем клубе.</p>\r\n"}}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRoom Create (31.8ms)[0m   [0mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('nursery', NULL, '2010-07-15 13:47:04', 'Детская комната', NULL, '2010-07-15 13:47:04', NULL, NULL, '<p>\r\n	&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	Детей от 3-х лет можно смело брать с собой в фитнес-клуб. Специально для ребят в &laquo;<span lang=\"en-US\">Maximus</span>&raquo; создана детская комната. В ней Вы всегда сможете оставить своего ребенка на время занятий спортом. В это время с Вашим ребенком будет заниматься инструктор Клуба. Для детей своя программа: увлекательная, в игровой форме и очень разнообразная. С помощью общения, игр и рисунков время в ожидании родителей пролетит незаметно и Вы сможете с комфортом провести время в нашем клубе.</p>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (118.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 184ms (DB: 155) | 302 Found [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:47:04) [GET]
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Load (0.5ms)[0m   [0mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;36;1mRoom Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Completed in 61ms (View: 31, DB: 4) | 200 OK [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#new (for 127.0.0.1 at 2010-07-15 17:47:28) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Rendering template within layouts/admin
+Rendering admin/rooms/new
+Completed in 31ms (View: 10, DB: 3) | 200 OK [http://maximus/admin/rooms/new]
+  [4;36;1mSQL (14.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:49:23) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"turkish", "title"=>"Турецкая бан\321\217", "description"=>"<p>\r\n\t&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tТурецкая баня всегда считалась на Востоке источником истинного наслаждения. Основной отличительной чертой является особый температурный режим: она не такая жаркая, (температура в диапазоне от 40 до 65 градусов), идеально подходит для людей, которые не любят или не переносят высокие температуры.</p>\r\n"}}
+  [4;36;1mUser Columns (21.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mRoom Create (25.6ms)[0m   [0;1mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('turkish', NULL, '2010-07-15 13:49:23', 'Турецкая баня', NULL, '2010-07-15 13:49:23', NULL, NULL, '<p>\r\n	&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	Турецкая баня всегда считалась на Востоке источником истинного наслаждения. Основной отличительной чертой является особый температурный режим: она не такая жаркая, (температура в диапазоне от 40 до 65 градусов), идеально подходит для людей, которые не любят или не переносят высокие температуры.</p>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (124.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 229ms (DB: 189) | 302 Found [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:49:24) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Load (0.5ms)[0m   [0;1mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;35;1mRoom Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Completed in 50ms (View: 28, DB: 4) | 200 OK [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#new (for 127.0.0.1 at 2010-07-15 17:49:29) [GET]
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Rendering template within layouts/admin
+Rendering admin/rooms/new
+Completed in 31ms (View: 10, DB: 3) | 200 OK [http://maximus/admin/rooms/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:50:21) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"sauna", "title"=>"Финская саун\320\260", "description"=>"<p>\r\n\t&nbsp;</p>\r\n<div style=\"font-family: Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\r\n\t<p>\r\n\t\tФинская&nbsp;сауна&nbsp;&ndash;&nbsp;незаменимое&nbsp;средство&nbsp;расслабления&nbsp;и&nbsp;снятия&nbsp;усталости.&nbsp;Она&nbsp;позволит&nbsp;отдохнуть&nbsp;посленапряженного&nbsp;дня.&nbsp;В&nbsp;нашем&nbsp;фитнес-центре&nbsp;сауна&nbsp;оборудованна&nbsp;всем&nbsp;необходимым&nbsp;для&nbsp;максимального&nbsp;удобства&nbsp;икомфорта.&nbsp;Температура&nbsp;в&nbsp;сауне&nbsp;доходит&nbsp;до&nbsp;95&nbsp;градусов&nbsp;по&nbsp;Цельсию&nbsp;при&nbsp;достаточно&nbsp;низкой&nbsp;влажности.&nbsp;Обычносовершается&nbsp;2-3&nbsp;захода&nbsp;по&nbsp;10-20&nbsp;минут,&nbsp;после&nbsp;которых&nbsp;принимается&nbsp;холодный&nbsp;душ.</p>\r\n</div>\r\n"}}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRoom Create (0.6ms)[0m   [0mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('sauna', NULL, '2010-07-15 13:50:21', 'Финская сауна', NULL, '2010-07-15 13:50:21', NULL, NULL, '<p>\r\n	&nbsp;</p>\r\n<div style=\"font-family: Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\r\n	<p>\r\n		Финская&nbsp;сауна&nbsp;&ndash;&nbsp;незаменимое&nbsp;средство&nbsp;расслабления&nbsp;и&nbsp;снятия&nbsp;усталости.&nbsp;Она&nbsp;позволит&nbsp;отдохнуть&nbsp;посленапряженного&nbsp;дня.&nbsp;В&nbsp;нашем&nbsp;фитнес-центре&nbsp;сауна&nbsp;оборудованна&nbsp;всем&nbsp;необходимым&nbsp;для&nbsp;максимального&nbsp;удобства&nbsp;икомфорта.&nbsp;Температура&nbsp;в&nbsp;сауне&nbsp;доходит&nbsp;до&nbsp;95&nbsp;градусов&nbsp;по&nbsp;Цельсию&nbsp;при&nbsp;достаточно&nbsp;низкой&nbsp;влажности.&nbsp;Обычносовершается&nbsp;2-3&nbsp;захода&nbsp;по&nbsp;10-20&nbsp;минут,&nbsp;после&nbsp;которых&nbsp;принимается&nbsp;холодный&nbsp;душ.</p>\r\n</div>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (56.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 100ms (DB: 62) | 302 Found [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:50:21) [GET]
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Load (1.3ms)[0m   [0mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;36;1mRoom Columns (9.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Completed in 189ms (View: 39, DB: 13) | 200 OK [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:50:22) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"sauna", "title"=>"Финская саун\320\260", "description"=>"<p>\r\n\t&nbsp;</p>\r\n<div style=\"font-family: Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\r\n\t<p>\r\n\t\tФинская&nbsp;сауна&nbsp;&ndash;&nbsp;незаменимое&nbsp;средство&nbsp;расслабления&nbsp;и&nbsp;снятия&nbsp;усталости.&nbsp;Она&nbsp;позволит&nbsp;отдохнуть&nbsp;посленапряженного&nbsp;дня.&nbsp;В&nbsp;нашем&nbsp;фитнес-центре&nbsp;сауна&nbsp;оборудованна&nbsp;всем&nbsp;необходимым&nbsp;для&nbsp;максимального&nbsp;удобства&nbsp;икомфорта.&nbsp;Температура&nbsp;в&nbsp;сауне&nbsp;доходит&nbsp;до&nbsp;95&nbsp;градусов&nbsp;по&nbsp;Цельсию&nbsp;при&nbsp;достаточно&nbsp;низкой&nbsp;влажности.&nbsp;Обычносовершается&nbsp;2-3&nbsp;захода&nbsp;по&nbsp;10-20&nbsp;минут,&nbsp;после&nbsp;которых&nbsp;принимается&nbsp;холодный&nbsp;душ.</p>\r\n</div>\r\n"}}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mRoom Create (0.7ms)[0m   [0;1mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('sauna', NULL, '2010-07-15 13:50:22', 'Финская сауна', NULL, '2010-07-15 13:50:22', NULL, NULL, '<p>\r\n	&nbsp;</p>\r\n<div style=\"font-family: Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\r\n	<p>\r\n		Финская&nbsp;сауна&nbsp;&ndash;&nbsp;незаменимое&nbsp;средство&nbsp;расслабления&nbsp;и&nbsp;снятия&nbsp;усталости.&nbsp;Она&nbsp;позволит&nbsp;отдохнуть&nbsp;посленапряженного&nbsp;дня.&nbsp;В&nbsp;нашем&nbsp;фитнес-центре&nbsp;сауна&nbsp;оборудованна&nbsp;всем&nbsp;необходимым&nbsp;для&nbsp;максимального&nbsp;удобства&nbsp;икомфорта.&nbsp;Температура&nbsp;в&nbsp;сауне&nbsp;доходит&nbsp;до&nbsp;95&nbsp;градусов&nbsp;по&nbsp;Цельсию&nbsp;при&nbsp;достаточно&nbsp;низкой&nbsp;влажности.&nbsp;Обычносовершается&nbsp;2-3&nbsp;захода&nbsp;по&nbsp;10-20&nbsp;минут,&nbsp;после&nbsp;которых&nbsp;принимается&nbsp;холодный&nbsp;душ.</p>\r\n</div>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (50.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 204ms (DB: 54) | 302 Found [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:50:22) [GET]
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Load (9.9ms)[0m   [0;1mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;35;1mRoom Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+Completed in 294ms (View: 250, DB: 13) | 200 OK [http://maximus/admin/rooms]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#edit (for 127.0.0.1 at 2010-07-15 17:50:29) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+  [4;35;1mRoom Load (77.2ms)[0m   [0mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 16) [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/edit
+Completed in 619ms (View: 488, DB: 80) | 200 OK [http://maximus/admin/rooms/16/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#new (for 127.0.0.1 at 2010-07-15 17:50:35) [GET]
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mRoom Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Rendering template within layouts/admin
+Rendering admin/rooms/new
+Completed in 90ms (View: 51, DB: 3) | 200 OK [http://maximus/admin/rooms/new]
+  [4;35;1mSQL (4.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#create (for 127.0.0.1 at 2010-07-15 17:51:22) [POST]
+  Parameters: {"commit"=>"добавит\321\214", "authenticity_token"=>"jf9XlyUL3Tq2AZCLXFFIcjo8lOMhktGevGd6tGGomtA=", "room"=>{"uri"=>"infrared", "title"=>"Инфракрасная саун\320\260", "description"=>"<p>\r\n\t&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n\tИнфракрасная сауна - это здоровье и ощущение новых сил. Основой ИК сауны являются инфракрасные нагревателей , которые работают в волновом диапазоне &quot;Лучей Жизни&quot;. Эта самая полезная часть солнечного спектра способна проникать до 5-ти сантиметров вглубь тела человека. Ощущение спокойного разливающегося по телу тепла уже через несколько минут после начала сеанса в инфракрасной сауне сопровождается обильным потовыделением.</p>\r\n"}}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRoom Create (24.7ms)[0m   [0mINSERT INTO `rooms` (`uri`, `photo_file_size`, `created_at`, `title`, `photo_file_name`, `updated_at`, `photo_content_type`, `photo_updated_at`, `description`) VALUES('infrared', NULL, '2010-07-15 13:51:22', 'Инфракрасная сауна', NULL, '2010-07-15 13:51:22', NULL, NULL, '<p>\r\n	&nbsp;</p>\r\n<p style=\"margin-bottom: 0cm\">\r\n	Инфракрасная сауна - это здоровье и ощущение новых сил. Основой ИК сауны являются инфракрасные нагревателей , которые работают в волновом диапазоне &quot;Лучей Жизни&quot;. Эта самая полезная часть солнечного спектра способна проникать до 5-ти сантиметров вглубь тела человека. Ощущение спокойного разливающегося по телу тепла уже через несколько минут после начала сеанса в инфракрасной сауне сопровождается обильным потовыделением.</p>\r\n')[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (83.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://maximus/admin/rooms
+Completed in 138ms (DB: 115) | 302 Found [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#index (for 127.0.0.1 at 2010-07-15 17:51:22) [GET]
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Load (0.6ms)[0m   [0mSELECT * FROM `rooms` [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/index
+  [4;36;1mRoom Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `rooms`[0m
+Completed in 56ms (View: 33, DB: 4) | 200 OK [http://maximus/admin/rooms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::RoomsController#edit (for 127.0.0.1 at 2010-07-15 17:52:11) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mRoom Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `rooms`[0m
+  [4;36;1mRoom Load (0.4ms)[0m   [0;1mSELECT * FROM `rooms` WHERE (`rooms`.`id` = 11) [0m
+Rendering template within layouts/admin
+Rendering admin/rooms/edit
+Completed in 33ms (View: 12, DB: 3) | 200 OK [http://maximus/admin/rooms/11/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AlbumsController#index (for 127.0.0.1 at 2010-07-15 17:52:26) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mAlbum Load (0.1ms)[0m   [0mSELECT * FROM `albums` [0m
+Rendering template within layouts/admin
+Rendering admin/albums/index
+  [4;36;1mAlbum Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Completed in 103ms (View: 31, DB: 2) | 200 OK [http://maximus/admin/]
