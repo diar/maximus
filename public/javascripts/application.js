@@ -11,8 +11,10 @@ $(document).ready(function() {
         imageBlank:   '/images/lightbox-blank.gif',
         fixedNavigation:true
     });
+    // Активируем ckeditor
+    $('.ckeditor').ckeditor();
     // Если находимся на странице голосования
-    if (typeof(vote_page!='undefined')){
+    if (defined(vote_page)){
         $('.do_vote').click(function(){
             vote_id = $(this).parents('.photo').find('.vote_id').html();
             $('#vote_id').val(vote_id);
@@ -99,4 +101,8 @@ function check_arrows_active () {
     } else {
         $('.arrow_right').removeClass('active');
     }
+}
+
+function defined(constant_name)  {
+    return (typeof window[constant_name] !== 'undefined');
 }

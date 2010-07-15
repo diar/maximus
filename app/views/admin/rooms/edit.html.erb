@@ -1,0 +1,28 @@
+<p style="float:left"><%= link_to '← назад', admin_rooms_path %></p>
+<h1><%= @title if !@title.nil? %></h1>
+<div class="clear"></div>
+
+<% if @room.photo.exists? %>
+<p style="float:right">
+  <%= image_tag  @room.photo.url(:medium) %>
+</p>
+<% end %>
+
+<%= error_messages_for :room %>
+<% form_for @room, :html => { :multipart => true }, :url => { :action => "update" } do |f| %>
+<p><%= label_tag 'uri','uri' %>
+<%= f.text_field :uri %></p>
+
+<p><%= label_tag 'title','заголовок' %>
+<%= f.text_field :title %></p>
+
+<p><label for="photo">фотография</label>
+<%= f.file_field :photo %></p>
+
+<div class="clear"></div>
+
+<p><%= label_tag 'description','описание' %>
+<%= f.text_area :description, :class=>'ckeditor' %></p>
+
+<p><%= f.submit 'изменить' %></p>
+<% end %>

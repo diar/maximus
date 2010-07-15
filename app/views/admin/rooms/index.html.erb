@@ -1,0 +1,31 @@
+<h1><%= if !@title.nil? then @title end %></h1>
+<div class="clear"></div>
+
+<% if @rooms.size>0 %>
+  <table id="room_list">
+    <tr>
+      <td></td>
+      <td>uri</td>
+      <td>заголовок</td>
+      <td class="methods">действия</td>
+    </tr>
+    <% counter=0 %>
+    <%@rooms.each do |room|%>
+      <% counter+=1 %>
+      <% css_class = counter%2==1 ? 'first' : 'second' %>
+      <tr class="<%= css_class %>">
+        <td><%= counter %></td>
+        <td><%= room.uri %></td>
+        <td><%= room.title %></td>
+        <td class="methods">
+          <%= link_to 'показать', admin_room_path(room) %>
+          <%= link_to 'изменить', edit_admin_room_path(room) %>
+          <%= link_to 'удалить', admin_room_path(room), :confirm => 'Вы уверены?', :method => :delete %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% else %>
+  <p>Нет записей о залах.</p>
+<% end %>
+<p><%= link_to 'добавить зал', new_admin_room_path %></p>

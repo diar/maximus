@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100630154325) do
+ActiveRecord::Schema.define(:version => 20100715112037) do
 
   create_table "albums", :force => true do |t|
     t.string   "title"
@@ -28,6 +28,18 @@ ActiveRecord::Schema.define(:version => 20100630154325) do
     t.datetime "image_updated_at"
     t.integer  "album_id"
     t.boolean  "in_voting"
+  end
+
+  create_table "rooms", :force => true do |t|
+    t.string   "uri"
+    t.string   "title"
+    t.text     "description"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|

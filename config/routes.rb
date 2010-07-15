@@ -42,12 +42,14 @@ ActionController::Routing::Routes.draw do |map|
     admin.signup '/signup', :controller => 'users', :action => 'new'
     admin.resources :users
     admin.resource :session
+    admin.resources :rooms
 
     admin.root :controller => "albums"
   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   map.root :controller => "special"
+  map.resources :tour
 
   # See how all your routes lay out with "rake routes"
 

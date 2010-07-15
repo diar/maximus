@@ -30,6 +30,11 @@
               Пользователи
             </li>
           </a>
+          <a href="<%= admin_rooms_path %>">
+            <li <% if current_controller?('rooms') %>class="active"<% end %>>
+              Залы
+            </li>
+          </a>
         </ul>
       <% end %>
       <div class="clear"></div>
@@ -38,6 +43,8 @@
       </div>
     </div>
     <%= javascript_include_tag 'jquery' %>
+    <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
+    <%= javascript_include_tag 'ckeditor/adapters/jquery.js' %>
     <%= javascript_include_tag 'jquery.lightbox' %>
     <%= javascript_include_tag 'application' %>
   </body>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Maximus | Фитнес клуб</title>
+    <title>Фитнес клуб Максимус Казань | Maximus</title>
     <meta name="keywords" content="фитнес клуб" />
     <meta name="description" content="Фитнес клуб" />
     <%= stylesheet_link_tag 'style' %>
@@ -12,7 +12,7 @@
     <div id="container">
       <div id="header">
         <img src="/images/logo.jpg" id="logo" alt="logo" />
-        <a href="about.html" class="menu_item">
+        <a href="/about.html" class="menu_item">
           О максимусе
         </a>
         <a href="/tour" class="menu_item <%= 'active' if current_controller?('tour')%>">
@@ -24,10 +24,10 @@
         <a href="/" class="menu_item <%= 'active' if current_controller?('special')%>">
           Акция
         </a>
-        <a href="cards.html" class="menu_item">
+        <a href="/cards.html" class="menu_item">
           Клубные карты
         </a>
-        <a href="contacts.html" class="menu_item last">
+        <a href="/contacts.html" class="menu_item last">
           Контакты
         </a>
       </div>

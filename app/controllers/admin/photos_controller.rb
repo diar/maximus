@@ -3,37 +3,19 @@ class Admin::PhotosController < ApplicationController
   layout "admin"
 
 	def new
-    # Работа с контентом
 		@photo = Photo.new
     @album = Album.find(params[:album_id])
-    # Настройка страницы
 		@title = 'Добавить фотографию'
-    # Отображение страницы
-		respond_to do |format|
-  		format.html
-		end
 	end
 
 	def edit
-    # Работа с контентом
 		@photo = Photo.find(params[:id])
-    # Настройка страницы
 		@title = 'Редактирование фотографии'
-    # Отображение страницы
-		respond_to do |format|
-  		format.html
-		end
 	end
 
 	def show
-    # Работа с контентом
     @photo = Photo.find(params[:id])
-    # Настройка страницы
 		@title = 'Просмотр фотографии'
-    # Отображение страницы
-		respond_to do |format|
-  		format.html
-		end
 	end
 
 	def create
