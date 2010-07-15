@@ -82,8 +82,9 @@ table td {
     padding: 0;
 }
 h1 {
-    font-size: 18px;
-    margin: 10px 5px;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-left:20px;
 }
 /* Основные блоки
 -------------------------------------------------------------------*/
@@ -476,25 +477,25 @@ h1 {
 #tour_map {
     position:relative;
 }
-.sticker {
+#tour_map .sticker {
     position: absolute;
     cursor:pointer;
 }
-.sticker img {
+#tour_map .sticker img {
     width:40px;
 }
-.sticker:hover img {
+#tour_map .sticker:hover img {
     width:50px;
     margin: -5px 0 0 -5px;
 }
-.sticker .number {
+#tour_map .sticker .number {
     position: relative;
     top:-28px;
     left:13px;
     font-size: 18px;
     color:#fff;
 }
-.sticker .title {
+#tour_map .sticker .title {
     position: relative;
     top:-50px;
     left:50px;
@@ -503,9 +504,16 @@ h1 {
     background: #fff;
     padding:5px;
 }
-.sticker:hover .title {
+#tour_map .sticker:hover .title {
     display:block;
 }
-.sticker:hover .number {
+#tour_map .sticker:hover .number {
     margin: -5px 0 0 0;
+}
+#tour_description {
+    font-size: 17px;
+    line-height: 21px;
+}
+#tour_description p {
+    text-indent: 25px;
 }
