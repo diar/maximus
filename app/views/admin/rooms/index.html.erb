@@ -18,7 +18,7 @@
         <td><%= room.uri %></td>
         <td><%= room.title %></td>
         <td class="methods">
-          <%= link_to 'показать', admin_room_path(room) %>
+         <!-- <%= link_to 'показать', admin_room_path(room) %> -->
           <%= link_to 'изменить', edit_admin_room_path(room) %>
           <%= link_to 'удалить', admin_room_path(room), :confirm => 'Вы уверены?', :method => :delete %>
         </td>

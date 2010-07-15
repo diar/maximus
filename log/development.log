@@ -989,3 +989,15 @@ Processing TourController#index (for 127.0.0.1 at 2010-07-15 20:04:46) [GET]
 Rendering template within layouts/tour
 Rendering tour/index
 Completed in 84ms (View: 32, DB: 0) | 200 OK [http://maximus/tour]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::AlbumsController#index (for 127.0.0.1 at 2010-07-15 20:06:15) [GET]
+  [4;35;1mUser Columns (601.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (78.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mAlbum Load (0.2ms)[0m   [0mSELECT * FROM `albums` [0m
+Rendering template within layouts/admin
+Rendering admin/albums/index
+  [4;36;1mAlbum Columns (18.2ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Completed in 1144ms (View: 46, DB: 699) | 200 OK [http://maximus/admin/]
