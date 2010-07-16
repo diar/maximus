@@ -10,29 +10,8 @@
   </head>
   <body>
     <div id="container">
-      <div id="header">
-        <img src="/images/logo.jpg" id="logo" alt="logo" />
-        <a href="/about.html" class="menu_item">
-          О максимусе
-        </a>
-        <a href="/tour" class="menu_item <%= 'active' if current_controller?('tour')%>">
-          Экскурсия
-        </a>
-        <a href="#" class="menu_item">
-          Фотогалерея
-        </a>
-        <a href="/" class="menu_item <%= 'active' if current_controller?('special')%>">
-          Акция
-        </a>
-        <a href="/cards.html" class="menu_item">
-          Клубные карты
-        </a>
-        <a href="/contacts.html" class="menu_item last">
-          Контакты
-        </a>
-      </div>
+      <%= render :partial=>'layouts/header' %>
       <%= yield %>
-      <div id="hr"></div>
     </div>
     <%= javascript_include_tag 'jquery' %>
     <%= javascript_include_tag 'jquery.lightbox' %>

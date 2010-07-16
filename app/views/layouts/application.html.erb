@@ -10,77 +10,10 @@
   </head>
   <body>
     <div id="container">
-      <div id="header">
-        <img src="/images/logo.jpg" id="logo" alt="logo" />
-        <a href="/about.html" class="menu_item">
-          О максимусе
-        </a>
-        <a href="/tour" class="menu_item <%= 'active' if current_controller?('tour')%>">
-          Экскурсия
-        </a>
-        <a href="#" class="menu_item">
-          Фотогалерея
-        </a>
-        <a href="/" class="menu_item <%= 'active' if current_controller?('special')%>">
-          Акция
-        </a>
-        <a href="/cards.html" class="menu_item">
-          Клубные карты
-        </a>
-        <a href="/contacts.html" class="menu_item last">
-          Контакты
-        </a>
-      </div>
-      <div id="banner">
-        <img id="banner_image" src="images/action.jpg" /><br />
-        <div id="banner_text">
-          <h1 class="caption_small">Стань лицом Фитнес Клуба&laquo;Maximus&raquo;</h1>
-          <div class="hr"></div>
-          <!--	  <h2 class="title">Приобрети абонемент за 5600 руб. / мес.</h2>-->
-          <!--	  <div class="description">
-            В последнее время здоровый образ жизни становится все более популярным.
-            И не может не радовать тот факт, что фитнес клубы Казани появляются как
-            грибы после дождя занятий побавловать себя бассейном, сауной или солярием.
-          </div>-->
-          <div class="description">
-            Участвуй в конкурсе «Стань лицом Фитнес Клуба <br />
-            «Maximus» и выиграй эксклюзивную фото сессию!<br /><br />
-            Кроме того, фото победителя появится на облож-<br />
-            ке августовского номера журнала «Maximus»! <br />
-          </div>
-          <!--<a class="banner_link" href="#">ЗАПИШИСЬ </a> 
-          <a href="#" class="banner_link" style="margin-left:115px; margin-top:-10px;">
-          <img src="images/join.jpg" /></a>-->
-        </div>
-        <div id="banner_clear"></div>
-      </div>
+      <%= render :partial=>'layouts/header' %>
+      <%= render :partial=>'layouts/banner' %>
       <%= yield %>
-      <div id="footer">
-        <div class="right"></div>
-        <div class="left">
-          <div class="text2">
-            <h2 class="title">Вакансии</h2>
-            <p>
-              В Фитнес Клуб "Maximus" требуются инструктора тренажерного зала и
-              инструктора групповых программ <b>537-15-15</b>.
-            </p><br />
-            <p>
-              В Фитнес Клуб "Maximus" требуются администраторы и менеджеры по
-              продажам <b>573-15-15</b>.
-            </p>
-          </div>
-          <!--	<div class="pdf">
-          <a href="#">Скачать
-          презентацию и тарифы</a><br />
-          (2 mb)
-          </div>-->
-          <div>
-            <p><img src="images/copy.jpg" /><br />
-              Copyright, 2010 Maximus</p>
-          </div>
-        </div>
-      </div>
-      <div id="hr"></div>
+      <%= render :partial=>'layouts/footer' %>
     </div>
     <%= javascript_include_tag 'jquery' %>
     <%= javascript_include_tag 'jquery.lightbox' %>

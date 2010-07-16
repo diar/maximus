@@ -517,3 +517,29 @@ h1 {
 #tour_description p {
     text-indent: 25px;
 }
+/** Фотоальбом
+--------------------------------------------------------------------**/
+.album_container,
+.photo_container{
+    float:left;
+    width:280px;
+    margin:18px;
+    overflow: hidden;
+    height:300px;
+}
+.album_container h3,
+.photo_container h3{
+    padding:0 10px;
+}
+.album,
+.photo {
+    width:260px;
+    height:260px;
+    padding:10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.album img,
+.photo img {
+    width:260px;
+}
