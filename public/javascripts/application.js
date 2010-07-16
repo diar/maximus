@@ -1,6 +1,11 @@
 var vote_photo_count = 0;
 var vote_photo_visible = 4;
 var vote_photo_position = 0;
+var admin_map_x = 0;
+var admin_map_y = 0;
+var admin_map_temp_x = 0;
+var admin_map_temp_y = 0;
+var admin_map_move = false;
 $(document).ready(function() {
     // Активируем lightbox
     $('.photos .photo_link').lightBox({
@@ -15,6 +20,37 @@ $(document).ready(function() {
     if (current_page=="admin"){
         // Активируем ckeditor
         $('.ckeditor').ckeditor();
+        // Перемещение маркера на карте
+        $('.marker').mousedown(function(e){
+            e = jQuery.event.fix(e);
+            admin_map_move = true;
+            admin_map_x = e.pageX;
+            admin_map_y = e.pageY;
+        });
+        $(document).mouseup(function(){
+            if (admin_map_move) {
+                admin_map_move = false;
+                admin_map_last_x = admin_map_temp_x;
+                admin_map_last_y = admin_map_temp_y;
+                $('#room_coord_x').val(admin_map_temp_x+25);
+                $('#room_coord_y').val(admin_map_temp_y+25);
+            }
+        });
+        $(document).mousemove(function(e){
+            if (admin_map_move) {
+                admin_map_temp_x = e.pageX - admin_map_x + admin_map_last_x;
+                admin_map_temp_y = e.pageY - admin_map_y + admin_map_last_y;
+                if (admin_map_temp_x<-25) admin_map_temp_x=-25;
+                if (admin_map_temp_x>703) admin_map_temp_x=703;
+                if (admin_map_temp_y<-25) admin_map_temp_y=-25;
+                if (admin_map_temp_y>560) admin_map_temp_y=560;
+                $(".marker").css({
+                    'left':(admin_map_temp_x),
+                    'top':(admin_map_temp_y)
+                });
+                return false;
+            }
+        });
     }
     $('.prev_page').html('←');
     $('.next_page').html('→');
@@ -70,18 +106,78 @@ $(document).ready(function() {
     // Если находимся на странице экскурсии
     if (current_page=="tour"){
         rooms = Array ();
-        rooms[1] = {'x':200,'y':270,'title':'Тренажерный зал','link':'gym'};
-        rooms[2] = {'x':470,'y':220,'title':'Кардиозал','link':'kardiozal'};
-        rooms[3] = {'x':700,'y':350,'title':'Зал групповых программ','link':'groups'};
-        rooms[4] = {'x':450,'y':140,'title':'Зал восточных единоборств','link':'east'};
-        rooms[5] = {'x':120,'y':170,'title':'Студия сайкла','link':'cycle'};
-        rooms[6] = {'x':540,'y':110,'title':'OUTDOOR - занятия','link':'outdoor'};
-        rooms[7] = {'x':240,'y':150,'title':'Детская комната','link':'nursery'};
-        rooms[8] = {'x':150,'y':410,'title':'Турецкая баня','link':'turkish'};
-        rooms[9] = {'x':180,'y':440,'title':'Финская сауна','link':'sauna'};
-        rooms[10] = {'x':160,'y':470,'title':'Инфракрасная сауна','link':'infrared'};
-        rooms[11] = {'x':360,'y':620,'title':'Фитнес бар','link':false};
-        rooms[12] = {'x':340,'y':500,'title':'Джакузи','link':false};
+        rooms[1] = {
+            'x':200,
+            'y':270,
+            'title':'Тренажерный зал',
+            'link':'gym'
+        };
+        rooms[2] = {
+            'x':470,
+            'y':220,
+            'title':'Кардиозал',
+            'link':'kardiozal'
+        };
+        rooms[3] = {
+            'x':700,
+            'y':350,
+            'title':'Зал групповых программ',
+            'link':'groups'
+        };
+        rooms[4] = {
+            'x':450,
+            'y':140,
+            'title':'Зал восточных единоборств',
+            'link':'east'
+        };
+        rooms[5] = {
+            'x':120,
+            'y':170,
+            'title':'Студия сайкла',
+            'link':'cycle'
+        };
+        rooms[6] = {
+            'x':540,
+            'y':110,
+            'title':'OUTDOOR - занятия',
+            'link':'outdoor'
+        };
+        rooms[7] = {
+            'x':240,
+            'y':150,
+            'title':'Детская комната',
+            'link':'nursery'
+        };
+        rooms[8] = {
+            'x':150,
+            'y':410,
+            'title':'Турецкая баня',
+            'link':'turkish'
+        };
+        rooms[9] = {
+            'x':180,
+            'y':440,
+            'title':'Финская сауна',
+            'link':'sauna'
+        };
+        rooms[10] = {
+            'x':160,
+            'y':470,
+            'title':'Инфракрасная сауна',
+            'link':'infrared'
+        };
+        rooms[11] = {
+            'x':360,
+            'y':620,
+            'title':'Фитнес бар',
+            'link':false
+        };
+        rooms[12] = {
+            'x':340,
+            'y':500,
+            'title':'Джакузи',
+            'link':false
+        };
         for (r in rooms) {
             img = parseInt(Math.random()*5)+1;
             if (rooms[r]['link']) {
@@ -92,7 +188,7 @@ $(document).ready(function() {
             $('<div class="sticker"><img src="/images/stickers/'+img+'.png">'+
                 '<div class="number">'+r+'</div>'+
                 '<div class="title">'+link+'</div>'+
-            '</div>')
+                '</div>')
             .appendTo('#tour_map')
             .css({
                 'left':rooms[r]['x'],

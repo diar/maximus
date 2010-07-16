@@ -1,20 +1,32 @@
 <p style="float:left"><%= link_to '← назад', admin_rooms_path %></p>
 <h1><%= @title if !@title.nil? %></h1>
 <div class="clear"></div>
-
+<script type="text/javascript">
+  var admin_map_last_x = <%= @room.coord_x %>;
+  var admin_map_last_y = <%= @room.coord_y %>;
+</script>
 <%= error_messages_for :room %>
 <% form_for :room,:html => { :multipart => true }, :url => admin_rooms_path do |f| %>
-<p><%= label_tag 'uri','uri' %>
-<%= f.text_field :uri %></p>
+  <p><%= label_tag 'uri','uri' %>
+    <%= f.hidden_field :coord_x %>
+    <%= f.hidden_field :coord_y %>
+    <%= f.text_field :uri %></p>
 
-<p><%= label_tag 'title','заголовок' %>
-<%= f.text_field :title %></p>
+  <p><%= label_tag 'title','заголовок' %>
+    <%= f.text_field :title %></p>
 
-<p><label for="photo">фотография</label>
-<%= f.file_field :photo %></p>
+  <p><label for="photo">фотография</label>
+    <%= f.file_field :photo %></p>
 
-<p><%= label_tag 'description','описание' %>
-<%= f.text_area :description, :class=>'ckeditor' %></p>
+  <p><%= label_tag 'description','описание' %>
+    <%= f.text_area :description, :class=>'ckeditor' %></p>
 
-<p><%= f.submit 'добавить' %></p>
+  <%= label_tag 'coords','расположение' %>
+  <div id="tour_map">
+    <%= image_tag 'tour.jpg' , :class=>'tour_image' %>
+    <%= image_tag 'stickers/1.png' , :class=>'marker',
+      :style=>"top:#{@room.coord_y}px;left:#{@room.coord_x}px" %>
+  </div>
+
+  <p><%= f.submit 'добавить' %></p>
 <% end %>
