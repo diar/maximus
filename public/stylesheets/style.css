@@ -489,11 +489,13 @@ h1 {
     margin: -5px 0 0 -5px;
 }
 #tour_map .sticker .number {
+    width:40px;
     position: relative;
     top:-28px;
-    left:13px;
+    left:0px;
     font-size: 18px;
     color:#fff;
+    text-align: center;
 }
 #tour_map .sticker .title {
     position: relative;
@@ -508,7 +510,8 @@ h1 {
     display:block;
 }
 #tour_map .sticker:hover .number {
-    margin: -5px 0 0 0;
+    margin: -5px 0 0 -5px;
+    width:50px;
 }
 #tour_description {
     font-size: 17px;
