@@ -519,27 +519,27 @@ h1 {
 }
 /** Фотоальбом
 --------------------------------------------------------------------**/
-.album_container,
-.photo_container{
+#albums .album_container,
+#album .photo_container{
     float:left;
     width:280px;
     margin:18px;
     overflow: hidden;
     height:300px;
 }
-.album_container h3,
-.photo_container h3{
+#albums .album_container h3,
+#album .photo_container h3{
     padding:0 10px;
 }
-.album,
-.photo {
+#albums .album,
+#album .photo {
     width:260px;
     height:260px;
     padding:10px;
     display: table-cell;
     vertical-align: middle;
 }
-.album img,
-.photo img {
+#albums .album img,
+#album .photo img {
     width:260px;
 }
