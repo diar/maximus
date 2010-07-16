@@ -1,8 +1,18 @@
 <script type="text/javascript">
   var current_page="tour";
+  var rooms = Array ();
+  <% counter = 0 %>
+<% @rooms.each do |room| %>
+    rooms[<%= counter %>] = {'x':<%= room.coord_x.to_i*1.30-20 %>,
+      'y':<%= room.coord_y*1.30-20 %>,
+      'title':'<%= room.title %>',
+      'link':'<%= if room.description!='' then room.uri else '' end %>'
+    };
+    <% counter+=1 %>
+<% end %>
 </script>
 <div id="content">
   <div id="tour_map">
-       <%= image_tag 'tour.jpg' %>
+    <%= image_tag 'tour.jpg' %>
   </div>
 </div>

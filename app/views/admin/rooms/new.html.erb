@@ -2,8 +2,8 @@
 <h1><%= @title if !@title.nil? %></h1>
 <div class="clear"></div>
 <script type="text/javascript">
-  var admin_map_last_x = <%= @room.coord_x %>;
-  var admin_map_last_y = <%= @room.coord_y %>;
+  var admin_map_last_x = <%= @room.coord_x.to_i - 25 %>;
+  var admin_map_last_y = <%= @room.coord_y.to_i - 25 %>;
 </script>
 <%= error_messages_for :room %>
 <% form_for :room,:html => { :multipart => true }, :url => admin_rooms_path do |f| %>
@@ -25,7 +25,7 @@
   <div id="tour_map">
     <%= image_tag 'tour.jpg' , :class=>'tour_image' %>
     <%= image_tag 'stickers/1.png' , :class=>'marker',
-      :style=>"top:#{@room.coord_y}px;left:#{@room.coord_x}px" %>
+      :style=>"top:#{@room.coord_y - 25}px;left:#{@room.coord_x - 25}px" %>
   </div>
 
   <p><%= f.submit 'добавить' %></p>

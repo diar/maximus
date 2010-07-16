@@ -19,8 +19,8 @@ class Admin::RoomsController < ApplicationController
 
   def edit
 		@room = Room.find(params[:id])
-    @room['coord_x'] = ((@room['coord_x'].to_i*728) / 952).to_i - 25;
-    @room['coord_y'] = ((@room['coord_y'].to_i*585) / 765).to_i - 25;
+    @room['coord_x'] = @room['coord_x'].to_i;
+    @room['coord_y'] = @room['coord_y'].to_i;
 		@title = 'Редактирование зала'
 	end
 
@@ -41,10 +41,6 @@ class Admin::RoomsController < ApplicationController
     @room = Room.find(params[:id])
 		@title = 'Редактирование информации о зале'
 		respond_to do |format|
-      coord_x = params[:room]['coord_x'].to_i;
-      coord_y = params[:room]['coord_y'].to_i;
-      params[:room]['coord_x'] = ((coord_x*952) / 728).to_i;
-      params[:room]['coord_y'] = ((coord_y*765) / 585).to_i;
 			if @room.update_attributes(params[:room])
 		  	flash[:notice] = 'Информация о зале изменена'
 		  	format.html { redirect_to(:controller=>'rooms') }
