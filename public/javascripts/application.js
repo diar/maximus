@@ -16,6 +16,8 @@ $(document).ready(function() {
         // Активируем ckeditor
         $('.ckeditor').ckeditor();
     }
+    $('.prev_page').html('←');
+    $('.next_page').html('→');
     // Если находимся на странице голосования
     if (current_page=="vote"){
         $('.do_vote').click(function(){

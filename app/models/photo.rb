@@ -7,4 +7,6 @@ class Photo < ActiveRecord::Base
     :medium => "320x320>",
     :small => "167x167>"
   }
+  cattr_reader :per_page
+  @@per_page = 6
 end

@@ -1,6 +1,6 @@
-<h1><%= @album.title %></h1>
+<h1><%= @album.title %><%= will_paginate @photos %></h1>
 <div id="album" class="photos">
-  <% @album.photos.each do |photo| %>
+  <% @photos.each do |photo| %>
     <div class="photo_container">
       <h3><%= photo.title %></h3>
       <div class="photo">

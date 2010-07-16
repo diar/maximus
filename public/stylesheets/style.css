@@ -546,3 +546,7 @@ h1 {
 #album .photo img {
     width:260px;
 }
+.pagination {
+    float:right;
+    font-size: 14px;
+}
