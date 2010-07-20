@@ -11,53 +11,12 @@
     </div>
   </div>
   <div id="page">
-    <h2 class="title">Условия участия:</h2>
+    <h2 class="title">Итоги конкурса:</h2>
     <p>
-      Для участия в конкурсе необходимо отправить свою фотографию на
-      электронный адрес <a href="mailto:pr@fk-maximus.ru">pr@fk-maximus.ru</a>
-      в срок до 25 июля 2010 г., а так же активно голосовать за понравившиеся<br />
-      фотографии на сайте <a href="http://www.fk-maximus.ru">www.fk-maximus.ru</a></p>
-    <p>
-      Более подробно с правилами проведения конкурса можно
-      <a href="rules.html">ознакомиться здесь</a>
+      Благодарим всех за участие в конкурсе "Стань лицом Фитнес Клуба "Maximus"!<br />
+      Победителем конкурса стала  <strong>Евлампьева Ксения.</strong><br />
+      Фото победителя появится на обложке журнала "Maximus".
     </p>
   </div>
   <div class="clear"></div>
-  <% if !@photos.nil? && @photos.count>0 %>
-    <div id="vote_photos">
-      <div id="vote_header">Голосование за фотографии</div>
-      <div id="vote_content">
-        <div class="photos">
-          <div class="photos_container">
-            <% @photos.each do |photo| %>
-              <div class="photo">
-                <div class="photo_container">
-                  <a class="photo_link" href="<%= photo.image.url(:big) %>" >
-                    <img src="<%= photo.image.url(:small) %>" alt="<%= photo.title  %>" />
-                  </a>
-                </div>
-                <div class="vote_block">
-                  <a href="#" class="do_vote">Проголосовать</a>
-                  <span><%= photo.votes.count %></span>
-                  <span class="vote_id" style="display: none;"><%= photo.id %></span>
-                </div>
-              </div>
-            <% end %>
-          </div>
-        </div>
-        <div class="arrow_left"></div>
-        <div class="arrow_right"></div>
-      </div>
-      <div id="vote_content_right"></div>
-    </div>
-  <% end %>
-</div>
-<div id="vote_dialog">
-  <span>Имя и фамилия</span>
-  <input id="vote_name" type="text" />
-  <span>E-mail</span>
-  <input id="vote_mail" type="text" />
-  <div id="vote_message"></div>
-  <input id="vote_id" type="hidden" />
-  <input type="button" id="vote_submit" value="Голосовать" />
-</div>
+  
