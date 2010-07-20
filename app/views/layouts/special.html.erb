@@ -12,7 +12,28 @@
     <div id="container">
       <%= render :partial=>'layouts/header' %>
       <%= render :partial=>'layouts/banner' %>
-      <%= yield %>
+      <script type="text/javascript">
+  var current_page="vote";
+</script>
+<div id="content">
+  <div class="right">
+    <div class="caption">Контакты:</div>
+    <span class="address2">г. Казань <br />ул. Минская, 9 ТК "Азино"</span>
+    <div class="contact">
+      <span class="tel"><span>(843)</span>537-15-15</span>
+      <br /><br />
+    </div>
+  </div>
+  <div id="page">
+    <h2 class="title">Итоги конкурса:</h2>
+    <p>
+      Благодарим всех за участие в конкурсе "Стань лицом Фитнес Клуба "Maximus"!<br />
+      Победителем конкурса стала  <strong>Евлампьева Ксения.</strong><br />
+      Фото победителя появится на обложке журнала "Maximus".
+    </p>
+  </div>
+  <div class="clear"></div>
+</div>
       <%= render :partial=>'layouts/footer' %>
     </div>
     <%= javascript_include_tag 'jquery' %>
