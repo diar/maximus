@@ -65,6 +65,11 @@ class Admin::PagesController < ApplicationController
     @page = Page.find(params[:id])
 		@title = 'Редактирование страницы'
 		respond_to do |format|
+      if @page.parent_id == 0
+        @page.level = 1
+      else
+        @page.level =  Page.find(@page.parent_id).level+1
+      end
 			if @page.update_attributes(params[:page])
 		  	flash[:notice] = 'Страница изменена'
 		  	format.html { redirect_to(:controller=>'pages') }
