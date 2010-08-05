@@ -1,4 +1,6 @@
 class SpecialController < ApplicationController
+  before_filter :init_page
+
   def index
     @photos = Photo.all(:conditions=>['in_voting',true])
     respond_to do |format|

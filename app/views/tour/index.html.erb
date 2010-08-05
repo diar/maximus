@@ -1,7 +1,7 @@
 <script type="text/javascript">
   var current_page="tour";
   var rooms = Array ();
-  <% counter = 0 %>
+  <% counter = 1 %>
 <% @rooms.each do |room| %>
     rooms[<%= counter %>] = {'x':<%= room.coord_x.to_i*1.30-20 %>,
       'y':<%= room.coord_y*1.30-20 %>,

@@ -12,6 +12,20 @@ class ApplicationController < ActionController::Base
     end
 	end
 
+  def init_page
+    @menu = Page.find_all_by_level(1)
+    if params[:controller] == 'pages'
+      @current_page = Page.find_by_uri(params[:id])
+    else
+      @current_page = Page.find_by_uri(params[:controller])
+    end
+    if @current_page.nil?
+      render :text => 'Страница не найдена', :status=>404
+    else
+      @current_page = Page.get_first_child(@current_page)
+    end
+  end
+
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 end

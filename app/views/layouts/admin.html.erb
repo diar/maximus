@@ -20,19 +20,24 @@
         </div>
         <div class="clear"></div>
         <ul id="menu">
+          <a href="<%= admin_pages_path %>">
+            <li <% if current_controller?('pages') %>class="active"<% end %>>
+              Страницы
+            </li>
+          </a>
           <a href="<%= admin_albums_path %>">
             <li <% if current_controller?('albums') || current_controller?('photos') %>class="active"<% end %>>
               Фотографии
             </li>
           </a>
-          <a href="<%= admin_users_path %>">
-            <li <% if current_controller?('users') %>class="active"<% end %>>
-              Пользователи
-            </li>
-          </a>
           <a href="<%= admin_rooms_path %>">
             <li <% if current_controller?('rooms') %>class="active"<% end %>>
               Залы
+            </li>
+          </a>
+          <a href="<%= admin_users_path %>">
+            <li <% if current_controller?('users') %>class="active"<% end %>>
+              Пользователи
             </li>
           </a>
         </ul>

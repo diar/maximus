@@ -76,7 +76,6 @@ a {
     text-decoration: underline;
     color: #14618d;
 }
-
 table td {
     margin: 0;
     padding: 0;
@@ -85,6 +84,11 @@ h1 {
     font-size: 20px;
     margin-top: 30px;
     padding-left:20px;
+}
+h2 {
+    color:#1b608a;
+    font-size:26px;
+    padding-bottom: 15px;
 }
 /* Основные блоки
 -------------------------------------------------------------------*/
@@ -102,17 +106,20 @@ h1 {
     float: left;
     padding: 46px 60px 24px 46px;
 }
-
 #header .menu_item {
-    font-family: Calibri;
-    display: block;
     float: left;
-    padding: 82px 10px 15px 10px;
     border-bottom: 10px solid #eaeaea;
     border-right: 2px solid #eaeaea;
-    font-size: 14px;
-    color: #000000;
 }
+
+#header .menu_item a {
+    font-family: Calibri;
+    display: block;
+    padding: 82px 10px 15px 10px;
+    font-size: 14px;
+    color: #000;
+}
+
 
 #header .menu_item.last {
     border-right: 0;
@@ -120,6 +127,26 @@ h1 {
 
 #header .menu_item.active {
     border-bottom: 10px solid #37a9cd;
+}
+
+#header .menu_item .child_menu {
+    display: none;
+    position:absolute;
+    z-index: 10000;
+    background:#37a9cb;
+    padding: 15px 2px;
+    font-size: 14px;
+    min-width: 120px;
+}
+#header .menu_item .child_menu_item{
+    padding: 0 20px;
+}
+#header .menu_item .child_menu_item.active{
+    background: #63bedb;
+}
+#header .menu_item .child_menu_item a{
+    padding: 3px 0;
+    color:#fff;
 }
 
 #banner {
@@ -189,6 +216,20 @@ h1 {
     *filter: progid : DXImageTransform.Microsoft.Alpha ( opacity = 50 );
 }
 
+#second_menu li {
+    float:left;
+    padding:3px 5px;
+    font-size: 14px;
+    margin-right: 5px;
+    color:#1b608a;
+}
+#second_menu li.active {
+    background:#37a9cb;
+    color:#fff;
+}
+#second_menu li a {
+    color:inherit;
+}
 #content {
     padding:20px;
 }

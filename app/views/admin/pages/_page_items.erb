@@ -1,0 +1,19 @@
+<% pages.each do |page|%>
+  <% @counter+=1 %>
+  <% css_class = @counter%2==1 ? 'first' : 'second' %>
+  <tr class="<%= css_class %>">
+    <td style="padding-left:<%= level*15 %>px;opacity:<%= (4-level)*0.3 %>">●</td>
+    <td><%= page.uri %></td>
+    <td><%= page.title %></td>
+    <td class="methods">
+      <!-- <%= link_to 'показать', admin_page_path(page) %> -->
+      <%= link_to 'изменить', edit_admin_page_path(page) %>
+      <%= link_to 'удалить', admin_page_path(page), :confirm => 'Вы уверены?', :method => :delete %>
+    </td>
+  </tr>
+  <%=
+    if level<3 and page.child_pages.size>0 then
+      render :partial=>'page_items',:locals=>{:pages=>page.child_pages,:level=>level+1}
+    end
+  %>
+<% end %>

@@ -1,0 +1,11 @@
+<h2><%= get_page_section(current_page).title %></h2>
+<ul id="second_menu">
+  <% get_page_section(current_page).child_pages.each do |menu_item| %>
+    <% if menu_item.show_menu==true %>
+      <li <%= 'class="active"' if current_page?(menu_item) %>>
+        <a href="/<%= menu_item.uri %>"><%= menu_item.title %></a>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+<div style="clear:left;"></div>

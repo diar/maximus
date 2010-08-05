@@ -1,0 +1,18 @@
+<h1><%= if !@title.nil? then @title end %></h1>
+<div class="clear"></div>
+
+<% if @pages.size>0 %>
+  <% @counter=0 %>
+  <table id="page_list">
+    <tr>
+      <td></td>
+      <td>uri</td>
+      <td>заголовок</td>
+      <td class="methods">действия</td>
+    </tr>
+    <%= render :partial=>'page_items',:locals=>{:pages=>@pages,:level=>1} %>
+  </table>
+<% else %>
+  <p>Нет ни одной страницы.</p>
+<% end %>
+<p><%= link_to 'добавить страницу', new_admin_page_path %></p>

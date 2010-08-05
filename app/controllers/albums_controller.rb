@@ -1,4 +1,6 @@
 class AlbumsController < ApplicationController
+  before_filter :init_page
+
   def index
     @albums=Album.visible
   end

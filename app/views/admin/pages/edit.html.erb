@@ -1,0 +1,24 @@
+<p style="float:left"><%= link_to '← назад', admin_pages_path %></p>
+<h1><%= @title if !@title.nil? %></h1>
+<div class="clear"></div>
+<%= error_messages_for :page %>
+<% form_for @page, :url => { :action => "update" }do |f| %>
+  <p><%= label_tag 'uri','uri' %>
+    <%= f.text_field :uri %></p>
+
+  <p><%= label_tag 'title','заголовок' %>
+    <%= f.text_field :title %></p>
+
+  <p>
+    <%= f.check_box :show_menu %>
+    <span>показывать в меню</span>
+  </p>
+
+  <p><%= label_tag 'parent_id','родительская страница' %>
+    <%= f.select :parent_id, @parent_pages, :selected=>@page.parent_id %></p>
+
+  <p><%= label_tag 'text','текст' %>
+    <%= f.text_area :text, :class=>'ckeditor' %></p>
+
+  <p><%= f.submit 'изменить' %></p>
+<% end %>

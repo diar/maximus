@@ -16,6 +16,12 @@ $(document).ready(function() {
         imageBlank:   '/images/lightbox-blank.gif',
         fixedNavigation:true
     });
+    $('#header .menu_item').mouseenter(function(){
+        if ($(this).find('.child_menu_item').length>0)
+            $(this).find('.child_menu').show();
+    }).mouseleave(function(){
+        $(this).find('.child_menu').hide();
+    });
     // Если находимся в админке
     if (current_page=="admin"){
         // Активируем ckeditor

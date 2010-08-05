@@ -1,4 +1,6 @@
 class TourController < ApplicationController
+  before_filter :init_page
+
   def index
     @rooms = Room.all
   end
