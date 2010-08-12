@@ -2,7 +2,7 @@
 <h1><%= @title if !@title.nil? %></h1>
 <div class="clear"></div>
 <%= error_messages_for :page %>
-<% form_for @page, :url => { :action => "update" }do |f| %>
+<% form_for @page, :url => { :action => "update" } do |f| %>
   <p><%= label_tag 'uri','uri' %>
     <%= f.text_field :uri %></p>
 

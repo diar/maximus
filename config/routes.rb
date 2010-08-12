@@ -43,6 +43,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.register '/register', :controller => 'users', :action => 'create'
     admin.signup '/signup', :controller => 'users', :action => 'new'
     admin.resources :users
+    admin.resources :exercises
     admin.resource :session
 
     admin.root :controller => "pages"
@@ -53,7 +54,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :tour
   map.resources :albums
   map.resources :pages
-
   map.root :controller=>'pages',:action=>'show',:id=>'index'
 
   # See how all your routes lay out with "rake routes"

@@ -35,6 +35,11 @@
               Залы
             </li>
           </a>
+          <a href="<%= admin_exercises_path %>">
+            <li <% if current_controller?('exercises') %>class="active"<% end %>>
+              Занятия
+            </li>
+          </a>
           <a href="<%= admin_users_path %>">
             <li <% if current_controller?('users') %>class="active"<% end %>>
               Пользователи
