@@ -1,0 +1,16 @@
+<p style="float:left"><%= link_to '← назад', admin_exercises_path %></p>
+<h1><%= if !@title.nil? then @title end %></h1>
+<div class="clear"></div>
+<%= error_messages_for :exercise %>
+<% form_for @exercise, :url => { :action => "update" } do |f| -%>
+<p><%= label_tag 'title','заголовок' %>
+<%= f.text_field :title %></p>
+
+<p><%= label_tag 'uri','uri' %>
+<%= f.text_field :uri %></p>
+
+<p><%= label_tag 'description','описание' %>
+<%= f.text_area :description %></p>
+
+<p><%= submit_tag 'изменить' %></p>
+<% end -%>

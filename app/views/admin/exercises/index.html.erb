@@ -1,0 +1,31 @@
+<h1><%= if !@title.nil? then @title end %></h1>
+<div class="clear"></div>
+
+<% if @exercises.size>0 %>
+  <table id="exercise_list">
+    <tr>
+      <td></td>
+      <td>название</td>
+      <td>uri</td>
+      <td class="methods">действия</td>
+    </tr>
+    <% counter=0 %>
+    <%@exercises.each do |exercise|%>
+      <% counter+=1 %>
+      <% css_class = counter%2==1 ? 'first' : 'second' %>
+      <tr class="<%= css_class %>">
+        <td><%= counter %></td>
+        <td><%= exercise.title %></td>
+        <td><%= exercise.uri %></td>
+        <td class="methods">
+          <!--<%= link_to 'показать', admin_exercise_path(exercise) %>-->
+          <%= link_to 'изменить', edit_admin_exercise_path(exercise) %>
+          <%= link_to 'удалить', admin_exercise_path(exercise), :confirm => 'Вы уверены?', :method => :delete %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% else %>
+  <p>Нет записей о занятиях.</p>
+<% end %>
+<p><%= link_to 'добавить занятие', new_admin_exercise_path %></p>
