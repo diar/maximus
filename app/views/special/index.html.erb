@@ -2,16 +2,9 @@
   var current_page="vote";
 </script>
 <div id="content">
-  <div class="right">
-    <div class="caption">Контакты:</div>
-    <span class="address2">г. Казань <br />ул. Минская, 9 ТК "Азино"</span>
-    <div class="contact">
-      <span class="tel"><span>(843)</span>537-15-15</span>
-      <br /><br />
-    </div>
-  </div>
+  <%= render :partial=>'layouts/contacts' %>
   <div id="page">
-    <h2 class="title">Итоги конкурса:</h2>
+    <%= render :partial=>'second_menu' %>
     <p>
       Благодарим всех за участие в конкурсе "Стань лицом Фитнес Клуба "Maximus"!<br />
       Победителем конкурса стала  <strong>Евлампьева Ксения.</strong><br />
