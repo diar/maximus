@@ -129,6 +129,17 @@ $(document).ready(function() {
             });
         }
     }
+    // Если находимся на странице расписания
+    if (current_page=="schedule"){
+        $('.schedule .item[rel!=""]')
+        .css('cursor','pointer')
+        .click(function(){
+            var exc = $(this).attr('rel');
+            var text = $('#el_'+exc).html();
+            $('#schedule_description_dialog').html(text);
+            $.show_dialog('schedule_description_dialog');
+        });
+    }
 });
 // Показать диалог
 $.show_dialog = function (id) {
@@ -137,7 +148,7 @@ $.show_dialog = function (id) {
     if ($('#body_fill').length==0) {
         $body_fill = $('<div id="body_fill"></div>');
         $body_fill.click(function(){
-            $.hide_dialog('vote_dialog');
+            $.hide_dialog(id);
         });
         $('body').append($body_fill);
     }

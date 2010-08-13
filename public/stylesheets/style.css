@@ -617,3 +617,21 @@ table.schedule td.item {
 table.schedule td.pl {
     background: yellow;
 }
+#schedule_description_dialog {
+    padding:0 10px;
+    z-index: 10000;
+    display: none;
+    left:50%;
+    margin-left: -225px;
+    position:fixed;
+    width:420px;
+    min-height:250px;
+    background:#fff;
+    border: #2584ad 4px solid;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    padding:15px;
+    font-size: 16px;
+    line-height: 20px;
+}

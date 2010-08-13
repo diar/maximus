@@ -1,23 +1,23 @@
 <div id="header">
   <img src="/images/logo.jpg" id="logo" alt="logo" />
-  <% @menu.each do |menu_item| %>
-    <ul class="menu">
-      <% if menu_item.show_menu==true %>
+  <ul class="menu">
+    <%- @menu.each do |menu_item| -%>
+      <%- if menu_item.show_menu==true -%>
         <li class="menu_item <%= 'active' if current_parent?(menu_item)%>">
           <a href="/<%= menu_item.uri %>"><%= menu_item.title %></a>
           <ul class="child_menu">
-            <% menu_item.child_pages.each do |child_item| %>
+            <%- menu_item.child_pages.each do |child_item| -%>
               <% if child_item.show_menu==true %>
                 <li class="child_menu_item <%= 'active' if current_section?(child_item)%>">
                   <a href="/<%= child_item.uri %>"><%= child_item.title %></a>
                 </li>
-              <% end %>
-            <% end %>
+              <%- end -%>
+            <%- end -%>
           </ul>
         </li>
-      <% end %>
-    </ul>
-  <% end %>
+      <%- end -%>
+    <%- end -%>
+  </ul>
 </div>
 <script type="text/javascript">
   var current_page = false;
