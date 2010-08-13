@@ -249,11 +249,8 @@ h2 {
 #page p {
     padding: 10px 0;
 }
-#page ul {
+#page ul.list {
     list-style: circle;
-}
-#second_menu {
-    list-style: none;
 }
 #second_menu li {
     float:left;
