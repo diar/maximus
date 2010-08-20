@@ -9,13 +9,12 @@ CKEDITOR.editorConfig = function( config )
   // Define changes to default configuration here. For example:
 
   //config.ContextMenu = ['Generic','Anchor','Flash','Select','Textarea','Checkbox','Radio','TextField','HiddenField','ImageButton','Button','BulletedList','NumberedList','Table','Form'] ; 
-  
   config.height = '200px';
   config.width = '100%';
   
   //config.resize_enabled = false;
   //config.resize_maxHeight = 2000;
-  //config.resize_maxWidth = 750;
+  config.resize_maxWidth = 900;
   
   //config.startupFocus = true;
   
