@@ -97,6 +97,12 @@ h1 {
     font-size: 22px;
     text-align: center;
 }
+h2 {
+    color:#72ADC0;
+    font-size: 18px;
+    text-align: left;
+    padding:5px 0 3px 5px;
+}
 /* Основные блоки
 -------------------------------------------------------------------*/
 #container {

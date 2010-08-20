@@ -9,43 +9,21 @@ class Admin::PagesController < ApplicationController
 
   def new
     @page = Page.new
-    @parent_pages = [['отсутствует',0]]
-    # страницы первого уровня
-    @pages = Page.level(1).each do |page|
-      @parent_pages.push [page.title, page.id]
-      # страницы второго уровня
-      page.child_pages.each do |child_page|
-        # страницы третьего уровня
-        @parent_pages.push ['- '+child_page.title, child_page.id]
-        child_page.child_pages.each do |third_page|
-          @parent_pages.push ['- - '+third_page.title, third_page.id]
-        end
-      end
-    end
+    @parent_pages = Page.get_list
     @title = 'Добавление страницы'
   end
 
   def edit
     @page = Page.find(params[:id])
-    @parent_pages = [['отсутствует',0]]
-    # страницы первого уровня
-    @pages = Page.level(1).each do |page|
-      @parent_pages.push [page.title, page.id]
-      # страницы второго уровня
-      page.child_pages.each do |child_page|
-        # страницы третьего уровня
-        @parent_pages.push ['- '+child_page.title, child_page.id]
-        child_page.child_pages.each do |third_page|
-          @parent_pages.push ['- - '+third_page.title, third_page.id]
-        end
-      end
-    end
+    @parent_pages = Page.get_list
     @title = 'Редактирование страницы'
   end
 
   def create
 		@page = Page.new(params[:page])
+    @parent_pages = Page.get_list
 		@title = 'Добавление страницы'
+    # страницы первого уровня
 		respond_to do |format|
       if @page.parent_id == 0
         @page.level = 1
@@ -63,6 +41,7 @@ class Admin::PagesController < ApplicationController
 
   def update
     @page = Page.find(params[:id])
+    @parent_pages = Page.get_list
 		@title = 'Редактирование страницы'
 		respond_to do |format|
       if @page.parent_id == 0

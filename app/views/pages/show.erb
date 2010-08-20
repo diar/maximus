@@ -1,5 +1,7 @@
 <div id="content">
-  <%= render :partial=>'layouts/contacts' %>
+  <% if @current_page.show_additional %>
+    <%= render :partial=>'layouts/contacts' %>
+  <% end %>
   <div id="page">
     <%= render :partial=>'second_menu' %>
     <p>

@@ -3,16 +3,8 @@
 <div class="clear"></div>
 <%= error_messages_for :page %>
 <% form_for :page, :url => admin_pages_path do |f| %>
-  <p><%= label_tag 'uri','uri' %>
-    <%= f.text_field :uri %></p>
-
   <p><%= label_tag 'title','заголовок' %>
     <%= f.text_field :title %></p>
-
-  <p>
-    <%= f.check_box :show_menu,:checked=>true %>
-    <span>показывать в меню</span>
-  </p>
 
   <p><%= label_tag 'parent_id','родительская страница' %>
     <%= f.select :parent_id, @parent_pages %></p>
@@ -20,6 +12,25 @@
   <p><%= label_tag 'text','текст' %>
     <%= f.cktext_area :text %>
   </p>
+
+  <div class="additional">
+
+    <h2>Дополнительные параметры</h2>
+    
+    <p><%= label_tag 'uri','uri' %>
+      <%= f.text_field :uri %></p>
+
+    <p>
+      <%= f.check_box :show_menu,:checked=>true %>
+      <span>показывать в меню</span>
+    </p>
+
+    <p>
+      <%= f.check_box :show_additional,:checked=>true %>
+      <span>показывать на странице баннер и контакты</span>
+    </p>
+
+  </div>
 
   <p><%= f.submit 'добавить' %></p>
 <% end %>
