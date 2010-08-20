@@ -11,7 +11,7 @@ class Admin::PagesController < ApplicationController
     @page = Page.new
     @parent_pages = [['отсутствует',0]]
     # страницы первого уровня
-    @pages = Page.find_all_by_level(1).each do |page|
+    @pages = Page.level(1).each do |page|
       @parent_pages.push [page.title, page.id]
       # страницы второго уровня
       page.child_pages.each do |child_page|
@@ -29,7 +29,7 @@ class Admin::PagesController < ApplicationController
     @page = Page.find(params[:id])
     @parent_pages = [['отсутствует',0]]
     # страницы первого уровня
-    @pages = Page.find_all_by_level(1).each do |page|
+    @pages = Page.level(1).each do |page|
       @parent_pages.push [page.title, page.id]
       # страницы второго уровня
       page.child_pages.each do |child_page|
