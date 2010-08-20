@@ -24,8 +24,6 @@ $(document).ready(function() {
     });
     // Если находимся в админке
     if (current_page=="admin"){
-        // Активируем ckeditor
-        $('.ckeditor').ckeditor();
         // Перемещение маркера на карте
         $('.marker').mousedown(function(e){
             e = jQuery.event.fix(e);

@@ -18,7 +18,8 @@
     <%= f.select :parent_id, @parent_pages %></p>
 
   <p><%= label_tag 'text','текст' %>
-    <%= f.text_area :text, :class=>'ckeditor' %></p>
+    <%= f.cktext_area :text %>
+  </p>
 
   <p><%= f.submit 'добавить' %></p>
 <% end %>
