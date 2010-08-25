@@ -3,8 +3,8 @@
     <div class="album_container">
       <h3><%= album.title %></h3>
       <div class="album">
-        <% if album.photos.length>0 && album.photos[0].image.exists? %>
-          <%= link_to( (image_tag album.photos[0].image.url(:medium)), album_path(album) ) %>
+        <% if !album.main_photo.nil? && album.main_photo.image.exists? %>
+          <%= link_to( (image_tag album.main_photo.image.url(:medium)), album_path(album) ) %>
         <% end %>
       </div>
     </div>

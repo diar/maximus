@@ -54,4 +54,15 @@ class Admin::AlbumsController < ApplicationController
   		format.html { redirect_to(admin_albums_url) }
 		end
 	end
+
+  def change_main_photo
+    @album = Album.find(params[:id])
+    respond_to do |format|
+			if @album.update_attributes(:main_photo_id=>params[:photo_id])
+		  	format.js { render :text=>'OK' }
+			else
+		  	format.js { render :text=>'Error' }
+			end
+		end
+  end
 end

@@ -9,13 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100825102840) do
+ActiveRecord::Schema.define(:version => 20100825130904) do
 
   create_table "albums", :force => true do |t|
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "visible"
+    t.integer  "main_photo_id"
   end
 
   create_table "ckeditor_assets", :force => true do |t|

@@ -24,6 +24,11 @@ $(document).ready(function() {
     });
     // Если находимся в админке
     if (current_page=="admin"){
+        $('#admin_photos .change_main').click(function(){
+            album_id = $(this).attr('rel');
+            photo_id = $(this).val();
+            $.post('/admin/albums/change_main_photo/'+album_id,{'photo_id':photo_id});
+        });
         // Перемещение маркера на карте
         $('.marker').mousedown(function(e){
             e = jQuery.event.fix(e);

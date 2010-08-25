@@ -33,7 +33,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :admin do |admin|
     admin.resources :photos
-    admin.resources :albums
+    admin.resources :albums,:member=>{'change_main_photo'=>:get}
     admin.resources :pages
     admin.resources :rooms
 

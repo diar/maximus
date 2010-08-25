@@ -2,21 +2,25 @@
 <h1><%= if !@title.nil? then @title end %></h1>
 <div class="clear"></div>
 
-<% if @album.photos.size>0 %>
-  <% @album.photos.each do |photo| %>
-    <div style="float:left;margin:10px; ">
-      <div class="photo_container">
-        <a class="image" href="<%=  admin_photo_path(photo)%>">
-        <%= image_tag photo.image.url(:small), :class=>'photo'%>
-        </a>
+<div id="admin_photos">
+  <% if @album.photos.size>0 %>
+    <% @album.photos.each do |photo| %>
+      <div style="float:left;margin:10px; ">
+        <div class="photo_container">
+          <a class="image" href="<%=  admin_photo_path(photo)%>">
+            <%= image_tag photo.image.url(:small), :class=>'photo'%>
+          </a>
+        </div>
+        <%= link_to 'удалить', admin_photo_path(photo),
+          :confirm => 'Вы уверены?', :method => :delete %>
+        <input type="radio" class="change_main" rel="<%= photo.album.id %>" value="<%= photo.id %>" name="photo"
+              <%= 'checked="checked"' if photo.id == @album.main_photo_id %> />
+        <span class="edit_photo">
+          <%= link_to 'изменить', edit_admin_photo_path(photo)%>
+        </span>
       </div>
-      <%= link_to 'удалить', admin_photo_path(photo),
-        :confirm => 'Вы уверены?', :method => :delete %>
-      <span class="edit_photo">
-        <%= link_to 'изменить', edit_admin_photo_path(photo)%>
-      </span>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
   <div class="clear"></div>
 <% else %>
   <p>
