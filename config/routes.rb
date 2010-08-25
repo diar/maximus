@@ -36,6 +36,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :albums,:member=>{'change_main_photo'=>:get}
     admin.resources :pages
     admin.resources :rooms
+    admin.resources :settings
 
     # Авторизация
     admin.logout '/logout', :controller => 'sessions', :action => 'destroy'

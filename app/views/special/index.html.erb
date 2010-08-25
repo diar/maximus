@@ -10,4 +10,48 @@
     <%= @current_page.text %>
   </div>
   <div class="clear"></div>
+
+  <!-- Если голосование включено -->
+  <% if @config['special'] && @config['special']=='on' %>
+    <div class="clear"></div>
+    <% if !@photos.nil? && @photos.count>0 %>
+      <div id="vote_photos">
+        <div id="vote_header">Голосование за фотографии</div>
+        <div id="vote_content">
+          <div class="photos">
+            <div class="photos_container">
+              <% @photos.each do |photo| %>
+                <div class="photo">
+                  <div class="photo_container">
+                    <a class="photo_link" href="<%= photo.image.url(:big) %>" >
+                      <img src="<%= photo.image.url(:small) %>" alt="<%= photo.title  %>" />
+                    </a>
+                  </div>
+                  <div class="vote_block">
+                    <a href="#" class="do_vote">Проголосовать</a>
+                    <span><%= photo.votes.count %></span>
+                    <span class="vote_id" style="display: none;"><%= photo.id %></span>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>
+          <div class="arrow_left"></div>
+          <div class="arrow_right"></div>
+        </div>
+        <div id="vote_content_right"></div>
+      </div>
+    <% end %>
+    <!-- Если голосование включено -->
+  <% end %>
+
+  <div id="vote_dialog">
+    <span>Имя и фамилия</span>
+    <input id="vote_name" type="text" />
+    <span>E-mail</span>
+    <input id="vote_mail" type="text" />
+    <div id="vote_message"></div>
+    <input id="vote_id" type="hidden" />
+    <input type="button" id="vote_submit" value="Голосовать" />
+  </div>
 </div>

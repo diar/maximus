@@ -1,0 +1,30 @@
+<h1><%= @title if !@title.nil? %></h1>
+<div class="clear"></div>
+
+<% if @settings.size>0 %>
+  <table id="setting_list">
+    <tr>
+      <td></td>
+      <td>параметр</td>
+      <td>значение</td>
+      <td class="methods">действия</td>
+    </tr>
+    <% counter=0 %>
+    <%@settings.each do |setting|%>
+      <% counter+=1 %>
+      <% css_class = counter%2==1 ? 'first' : 'second' %>
+      <tr class="<%= css_class %>">
+        <td><%= counter %></td>
+        <td><%= setting.title %></td>
+        <td><%= setting.value %></td>
+        <td class="methods">
+          <%= link_to 'изменить', edit_admin_setting_path(setting) %>
+          <%= link_to 'удалить', admin_setting_path(setting), :confirm => 'Вы уверены?', :method => :delete %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% else %>
+  <p>Нет параметров.</p>
+<% end %>
+<p><%= link_to 'добавить параметр', new_admin_setting_path %></p>

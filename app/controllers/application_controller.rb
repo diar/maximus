@@ -13,6 +13,8 @@ class ApplicationController < ActionController::Base
 	end
 
   def init_page
+    @config = {}
+    Setting.all.each { |setting| @config[setting.name]=setting.value }
     @menu = Page.find_all_by_level(1)
     if params[:controller] == 'pages'
       @current_page = Page.find_by_uri(params[:id])

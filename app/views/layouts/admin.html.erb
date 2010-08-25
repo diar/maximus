@@ -46,6 +46,11 @@
               Пользователи
             </li>
           </a>
+          <a href="<%= admin_settings_path %>">
+            <li <% if current_controller?('settings') %>class="active"<% end %>>
+              Настройки
+            </li>
+          </a>
         </ul>
       <% end %>
       <div class="clear"></div>

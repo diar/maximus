@@ -1,0 +1,14 @@
+<p style="float:left"><%= link_to '← назад', admin_settings_path %></p>
+<h1><%= if !@title.nil? then @title end %></h1>
+<div class="clear"></div>
+
+<% form_for @setting, :url => { :action => 'update' } do |f| %>
+  <p><%= f.error_messages %></p>
+  <p>
+    <%= label_tag 'value', 'значение' %>
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.submit 'изменить' %>
+  </p>
+<% end %>
