@@ -55,6 +55,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :albums
   map.resources :pages
   map.root :controller=>'pages',:action=>'show',:id=>'index'
+  map.connect '/programm', :controller=>'schedule'
 
   # See how all your routes lay out with "rake routes"
 

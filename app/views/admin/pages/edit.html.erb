@@ -21,13 +21,18 @@
       <%= f.text_field :uri %></p>
 
     <p>
-      <%= f.check_box :show_menu,:checked=>true %>
+      <%= f.check_box :show_menu,:checked=>@page.show_menu %>
       <span>показывать в меню</span>
     </p>
 
     <p>
-      <%= f.check_box :show_additional,:checked=>true %>
+      <%= f.check_box :show_additional,:checked=>@page.show_additional %>
       <span>показывать на странице баннер и контакты</span>
+    </p>
+
+    <p>
+      <%= f.check_box :show_vacancy,:checked=>@page.show_vacancy %>
+      <span>показывать на странице вакансии</span>
     </p>
 
   </div>

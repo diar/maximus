@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100820110240) do
+ActiveRecord::Schema.define(:version => 20100825102840) do
 
   create_table "albums", :force => true do |t|
     t.string   "title"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20100820110240) do
     t.integer  "level",           :default => 1
     t.boolean  "show_menu"
     t.boolean  "show_additional"
+    t.boolean  "show_vacancy",    :default => true
   end
 
   create_table "photos", :force => true do |t|

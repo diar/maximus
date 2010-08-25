@@ -2,7 +2,7 @@
   <% if @current_page.show_additional %>
     <%= render :partial=>'layouts/contacts' %>
   <% end %>
-  <div id="page">
+  <div id="page" <%= 'style="width:auto"' unless @current_page.show_additional %>>
     <%= render :partial=>'second_menu' %>
     <p>
       <%= @page.text %>

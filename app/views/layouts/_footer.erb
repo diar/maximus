@@ -1,21 +1,23 @@
 <div id="footer">
+
   <div class="right"></div>
-  <div class="left">
-    <div class="text2">
-      <h2 class="title">Вакансии</h2>
-      <p>
-        В Фитнес Клуб "Maximus" требуются инструктора тренажерного зала и
-        инструктора групповых программ <b>537-15-15</b>.
-      </p><br />
-      <p>
-        В Фитнес Клуб "Maximus" требуются администраторы и менеджеры по
-        продажам <b>573-15-15</b>.
-      </p>
+  <% if @current_page.show_vacancy  %>
+    <div class="left">
+      <div class="text2">
+        <h2 class="title">Вакансии</h2>
+        <p>
+          В Фитнес Клуб "Maximus" требуются инструктора тренажерного зала и
+          инструктора групповых программ <b>537-15-15</b>.
+        </p><br />
+        <p>
+          В Фитнес Клуб "Maximus" требуются администраторы и менеджеры по
+          продажам <b>573-15-15</b>.
+        </p>
+      </div>
     </div>
-    <div>
-      <p><img src="/images/copy.jpg" /><br />
-        Copyright, 2010 Maximus</p>
-    </div>
+  <% end %>
+  <div>
+    <p><img src="/images/copy.jpg" /><br />
+      Copyright, 2010 Maximus</p>
   </div>
 </div>
-<div id="hr"></div>
