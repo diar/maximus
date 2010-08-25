@@ -11,7 +11,7 @@
   <body>
     <div id="container">
       <%= render :partial=>'layouts/header' %>
-      % if @current_page.show_additional %>
+      <% if @current_page.show_additional %>
         <%= render :partial=>'layouts/banner_about' %>
       <% end %>
       <%= yield %>
