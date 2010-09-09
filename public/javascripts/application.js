@@ -136,13 +136,15 @@ $(document).ready(function() {
     }
     // Если находимся на странице расписания
     if (current_page=="schedule"){
-        $('.schedule .item[rel!=""]')
+        $('.schedule .item')
         .css('cursor','pointer')
         .click(function(){
             var exc = trim($(this).html());
             var text = $('div[rel="'+exc+'"]').html();
-            $('#schedule_description_dialog').html(text);
-            $.show_dialog('schedule_description_dialog');
+            if (text!='') {
+                $('#schedule_description_dialog').html(text);
+                $.show_dialog('schedule_description_dialog');
+            }
         });
     }
 });
