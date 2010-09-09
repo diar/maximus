@@ -141,7 +141,7 @@ $(document).ready(function() {
         .click(function(){
             var exc = trim($(this).html());
             var text = $('div[rel="'+exc+'"]').html();
-            if (text!='') {
+            if (text && trim(text)!='') {
                 $('#schedule_description_dialog').html(text);
                 $.show_dialog('schedule_description_dialog');
             }
