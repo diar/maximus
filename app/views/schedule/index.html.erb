@@ -15,7 +15,7 @@
 
 <div id="descriptions" style="display:none;">
   <% @exercises.each do |exercise| %>
-    <div id="el_<%= exercise.uri %>">
+    <div rel="<%= exercise.uri %>">
       <h2><%= exercise.title %></h2>
       <p><%= exercise.description %></p>
     </div>

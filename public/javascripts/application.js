@@ -27,7 +27,9 @@ $(document).ready(function() {
         $('#admin_photos .change_main').click(function(){
             album_id = $(this).attr('rel');
             photo_id = $(this).val();
-            $.post('/admin/albums/change_main_photo/'+album_id,{'photo_id':photo_id});
+            $.post('/admin/albums/change_main_photo/'+album_id,{
+                'photo_id':photo_id
+            });
         });
         // Перемещение маркера на карте
         $('.marker').mousedown(function(e){
@@ -137,8 +139,8 @@ $(document).ready(function() {
         $('.schedule .item[rel!=""]')
         .css('cursor','pointer')
         .click(function(){
-            var exc = $(this).attr('rel');
-            var text = $('#el_'+exc).html();
+            var exc = trim($(this).html());
+            var text = $('div[rel="'+exc+'"]').html();
             $('#schedule_description_dialog').html(text);
             $.show_dialog('schedule_description_dialog');
         });
@@ -186,4 +188,9 @@ function check_arrows_active () {
 
 function defined(constant_name)  {
     return (typeof window[constant_name] !== 'undefined');
+}
+
+function trim(string)
+{
+    return string.replace(/(^\s+)|(\s+$)/g, "");
 }
